@@ -1,0 +1,33 @@
+madler@@zlib	21	39	7404
+get_crc_table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\crc32.c
+make_crc_table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\crc32.c
+gzprintf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\gzio.c
+tr_static_init	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\trees.c
+zcalloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c
+zcfree	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c
+zlibVersion	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c
+longest_match	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\asm386\gvmat32c.c
+match_init	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\asm386\gvmat32c.c
+main	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\test.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream2\zstream_test.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+attach	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+close	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+fillbuf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+flushbuf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+open	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+overflow	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+rdbuf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+seekoff	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+setcompressionlevel	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+setcompressionstrategy	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+sync	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+underflow	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+ExprMatch	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+TGZfname	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+TGZnotfound	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+error	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+getoct	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+help	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+makedir	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+matchname	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+strtime	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+tar	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c

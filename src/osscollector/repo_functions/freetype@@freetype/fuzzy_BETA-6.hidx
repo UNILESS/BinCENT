@@ -1,0 +1,770 @@
+freetype@@freetype	71	890	51590
+DM_Done_Mem	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\config\ansi\memdebug.c
+DM_Forget	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\config\ansi\memdebug.c
+DM_Init_Mem	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\config\ansi\memdebug.c
+DM_Record	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\config\ansi\memdebug.c
+FT_New_Memory	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\config\unix\ftsystem.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftsystem.c
+FT_New_Stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\config\unix\ftsystem.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftsystem.c
+ft_alloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\config\unix\ftsystem.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftsystem.c
+ft_close_stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\config\unix\ftsystem.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftsystem.c
+ft_free	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\config\unix\ftsystem.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftsystem.c
+ft_realloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\config\unix\ftsystem.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftsystem.c
+blit_gray_to_24	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_gray_to_32	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_gray_to_555	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_gray_to_565	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_gray_to_gray	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_gray_to_gray_simple	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_mono_to_mono	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_mono_to_pal4	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_mono_to_pal8	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_mono_to_rgb16	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_mono_to_rgb24	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+blit_mono_to_rgb32	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+compute_clips	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+grBlitGlyphToBitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+grGetConversion	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+grGetSaturation	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grblit.c
+find_device	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grdevice.c
+grGetDeviceModes	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grdevice.c
+grListenSurface	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grdevice.c
+grNewSurface	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grdevice.c
+grRefreshRectangle	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grdevice.c
+grRefreshSurface	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grdevice.c
+grSetTitle	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grdevice.c
+grWriteSurfaceChar	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grdevice.c
+grWriteSurfaceString	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grdevice.c
+grGotobitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grfont.c
+grGotoxy	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grfont.c
+grLn	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grfont.c
+grSetMargin	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grfont.c
+grWrite	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grfont.c
+grWriteCellChar	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grfont.c
+grWriteCellString	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grfont.c
+grWriteln	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grfont.c
+grInitDevices	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grinit.c
+check_mode	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grobjs.c
+grAlloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grobjs.c
+grDoneBitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grobjs.c
+grFree	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grobjs.c
+grNewBitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grobjs.c
+grRealloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\grobjs.c
+Panic	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\xtest.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\common.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\compos.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftlint.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttimer.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttry.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\memtest.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ttdebug.c
+main	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\xtest.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\ftlint_m.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\ftview_m.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\compos.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftlint.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftsbit.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttimer.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttry.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\memtest.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ttdebug.c
+done_device	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\mac\grmac.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+done_surface	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\mac\grmac.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+done_window	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\mac\grmac.c
+init_device	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\mac\grmac.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+init_surface	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\mac\grmac.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+listen_event	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\mac\grmac.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+refresh_rectangle	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\mac\grmac.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+set_title	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\mac\grmac.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+LogMessage	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+Message_Process	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c
+RunPMWindow	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c
+enable_os2_iostreams	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\os2\gros2pm.c
+CreateTheWindow	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c
+RegisterTheClass	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\win32\grwin32.c
+KeySymTogrKey	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+add_pixel_mode	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+convert_gray_to_16	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+convert_gray_to_24	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+convert_gray_to_32	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+convert_gray_to_pal8	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+convert_rectangle	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\graph\x11\grx11.c
+init_toolbox	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\ftlint_m.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\ftview_m.c
+FTMac_GetFullPath	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+event_loop	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+get_folder_parent	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+get_missing_params	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+handle_not	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+handle_open_app	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+handle_open_doc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+init_app_name	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+reset_ae_handlers	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+set_ae_handlers	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+strdup	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\mac\getargv.c
+ft_basename	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\common.c
+getopt	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\common.c
+Usage	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\compos.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftlint.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftsbit.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttimer.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttry.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\memtest.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ttdebug.c
+TT_ErrToString18	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftsbit.c
+dump_bitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftsbit.c
+dump_range	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftsbit.c
+Help	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+PanicZ	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+Process_Event	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+clear_display	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c
+compute_bbox	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c
+init_display	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c
+layout_glyphs	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c
+prepare_text	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c
+render_string	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c
+reset_raster	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+reset_scale	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c
+reset_transform	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c
+usage	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftstring.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+Clear_Buffer	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttimer.c
+ConvertRaster	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttimer.c
+Get_Time	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttimer.c
+Init_Engine	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttimer.c
+LoadChar	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\fttimer.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+Clear_Display	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+Init_Display	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+Render_All	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+Render_Glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Render_Text	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+Reset_Scale	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ftview.c
+dump_mem	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\memtest.c
+forget_my_block	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\memtest.c
+my_alloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\memtest.c
+my_free	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\memtest.c
+my_realloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\memtest.c
+record_my_block	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\memtest.c
+Calc_Length	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ttdebug.c
+Cur_U_Line	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ttdebug.c
+Init_Keyboard	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ttdebug.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ttdebug.c
+Reset_Keyboard	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ttdebug.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ttdebug.c
+RunIns	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\demos\src\ttdebug.c
+FT_Add64	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c
+FT_Div64by32	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c
+FT_DivFix	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c
+FT_MulDiv	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c
+FT_MulFix	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c
+FT_MulTo64	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c
+FT_Sqrt32	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c
+FT_Sqrt64	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c
+FT_Sub64	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c
+ft_order64	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftcalc.c
+FT_Message	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftdebug.c
+FT_Panic	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftdebug.c
+FT_SetTraceLevel	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftdebug.c
+FT_Create_Extensions	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftextend.c
+FT_Destroy_Extensions	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftextend.c
+FT_Done_Extensions	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftextend.c
+FT_Get_Extension	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftextend.c
+FT_Init_Extensions	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftextend.c
+FT_Register_Extension	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftextend.c
+FT_Done_Glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftglyph.c
+FT_Get_Glyph_Bitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftglyph.c
+FT_Get_Glyph_Outline	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftglyph.c
+FT_Glyph_Get_Box	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftglyph.c
+FT_Set_Transform	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftglyph.c
+ft_prepare_glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftglyph.c
+Conic_To	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Cubic_To	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Line_To	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Move_To	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+check_sort	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+compute_cbox	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+dump_cells	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+grays_convert_glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+grays_hline	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+grays_raster_done	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+grays_raster_new	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+grays_raster_render	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+grays_raster_reset	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+grays_render_span	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+grays_sweep	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+init_cells	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+quick_sort	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+record_cell	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+render_conic	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+render_cubic	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+render_line	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+render_scanline	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+set_cell	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+shell_sort	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+split_conic	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+split_cubic	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+start_cell	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftgrays.c
+FT_Default_Drivers	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftinit.c
+FT_Init_FreeType	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftinit.c
+FT_List_Add	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftlist.c
+FT_List_Finalize	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftlist.c
+FT_List_Find	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftlist.c
+FT_List_Insert	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftlist.c
+FT_List_Iterate	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftlist.c
+FT_List_Remove	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftlist.c
+FT_List_Up	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftlist.c
+Destroy_Driver	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Add_Driver	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Alloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Attach_File	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Attach_Stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Done_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Done_FreeType	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Done_GlyphSlot	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Done_Library	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Done_Size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Done_Stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Free	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Get_Char_Index	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Get_Driver	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Get_Kerning	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Get_Raster	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Get_Sfnt_Table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Load_Char	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Load_Glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_New_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_New_GlyphSlot	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_New_Library	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_New_Memory_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_New_Size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Open_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Realloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Remove_Driver	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Select_Charmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Set_Char_Size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Set_Charmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Set_Debug_Hook	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Set_Pixel_Sizes	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Set_Raster	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Set_Raster_Mode	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+FT_Unset_Raster	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+destroy_face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+destroy_size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+ft_done_stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+ft_new_input_stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c
+open_face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftobjs.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+FT_Done_GlyphZone	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Matrix_Invert	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Matrix_Multiply	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_New_GlyphZone	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Outline_Copy	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Outline_Decompose	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Outline_Done	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Outline_Get_Bitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Outline_Get_CBox	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Outline_New	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Outline_Render	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Outline_Reverse	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Outline_Transform	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Outline_Translate	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Update_GlyphZone	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+FT_Vector_Transform	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftoutln.c
+Bezier_Down	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Bezier_Up	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Convert_Glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Decompose_Curve	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+DelOld	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Draw_Sweep	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+End_Profile	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Finalize_Profile_Table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Horizontal_Gray_Sweep_Drop	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Horizontal_Gray_Sweep_Span	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Horizontal_Sweep_Drop	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Horizontal_Sweep_Init	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Horizontal_Sweep_Span	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Horizontal_Sweep_Step	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Init_Linked	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+InsNew	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Insert_Y_Turn	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Line_Down	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Line_Up	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+New_Profile	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Render_Gray_Glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Render_Single_Pass	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Set_High_Precision	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Sort	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Split_Conic	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Split_Cubic	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Update	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Vertical_Gray_Sweep_Init	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Vertical_Gray_Sweep_Step	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Vertical_Sweep_Drop	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Vertical_Sweep_Init	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Vertical_Sweep_Span	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+Vertical_Sweep_Step	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+ft_black_done	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+ft_black_init	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+ft_black_new	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+ft_black_render	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+ft_black_reset	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+ft_black_set_mode	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftraster.c
+FT_Access_Frame	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Forget_Frame	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Get_Char	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Get_Long	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Get_Offset	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Get_Short	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_New_Memory_Stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Read_Char	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Read_Fields	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Read_Long	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Read_Offset	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Read_Short	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Read_Stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Read_Stream_At	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Seek_Stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Skip_Stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+FT_Stream_Pos	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftstream.c
+ft_io_stream	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\base\ftsystem.c
+create_lwfn_name	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+done_driver	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+done_face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+getDriverInterface	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttdriver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1driver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1driver.c
+init_driver	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+init_face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+is_suitcase	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+lwfn_stream_close	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+make_file_spec	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+p2c_str	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+parse_fond	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+read_type1_data	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+sfnt_stream_close	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\macfond\fonddrvr.c
+TT_Char_Index	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Close_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Copy_Outline	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Done_FreeType	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Done_Glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Done_Instance	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Done_Outline	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Done_SBit_Image	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_CharMap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_CharMap_Count	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_CharMap_ID	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Face_Bitmaps	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Face_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Face_Pointer	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Face_Properties	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Font_Data	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Glyph_Big_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Glyph_Bitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Glyph_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Glyph_Outline	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Glyph_Pixmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Instance_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Instance_Pointer	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Name_Count	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Name_ID	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Name_String	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Outline_BBox	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Outline_Bitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Get_Outline_Pixmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Init_FreeType	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Init_Post_Extension	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Init_SBit_Extension	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Load_Glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttgload.c
+TT_Load_Glyph_Bitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Load_PS_Names	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_MulDiv	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_MulFix	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_New_Glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_New_Instance	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_New_Outline	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_New_SBit_Image	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Open_Collection	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Open_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Set_Face_Pointer	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Set_Instance_CharSize	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Set_Instance_CharSizes	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Set_Instance_PixelSizes	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Set_Instance_Pointer	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Set_Instance_Resolutions	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Set_Instance_Transform_Flags	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Set_Raster_Gray_Palette	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Transform_Outline	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Transform_Vector	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+TT_Translate_Outline	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+get_metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\oldapi\ttapi.c
+OTL_Get_Anchor	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Get_Base_Coordinate	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Get_Baseline_Values	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Get_Coverage_Index	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Get_Device_Adjustment	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Get_Features_List	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Get_Glyph_Class	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Get_Languages_List	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Get_Lookups_List	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Get_Mark	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Get_ValueRecord	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Table_Done	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Table_Init	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Table_Set_Features	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Table_Set_Lookups	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_Table_Set_Scripts	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+OTL_ValueRecord_Size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\otlayout\oltypes.c
+PS_Build_Unicode_Table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\psnames\psdriver.c
+PS_Lookup_Unicode	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\psnames\psdriver.c
+PS_Macintosh_Name	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\psnames\psdriver.c
+PS_Standard_Strings	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\psnames\psdriver.c
+PS_Unicode_Value	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\psnames\psdriver.c
+compare_uni_maps	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\psnames\psdriver.c
+TT_CharMap_Free	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttcmap.c
+TT_CharMap_Load	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttcmap.c
+code_to_index0	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttcmap.c
+code_to_index2	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttcmap.c
+code_to_index4	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttcmap.c
+code_to_index6	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttcmap.c
+TT_Free_Hdmx	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Free_Names	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Goto_Table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_Any	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_CMap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_Directory	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_Format_Tag	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_Gasp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_Hdmx	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_Header	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_Kern	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_MaxProfile	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_Metrics_Header	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_Names	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_OS2	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_Load_PostScript	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+TT_LookUp_Table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttload.c
+Load_Format_20	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttpost.c
+Load_Format_25	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttpost.c
+Load_Post_Names	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttpost.c
+TT_Free_Post_Names	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttpost.c
+TT_Get_PS_Name	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttpost.c
+Crop_Bitmap	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+Find_SBit_Image	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+Find_SBit_Range	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+Load_SBit_Const_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+Load_SBit_Image	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+Load_SBit_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+Load_SBit_Range	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+Load_SBit_Range_Codes	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+Load_SBit_Single	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+TT_Free_SBit_Strikes	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+TT_Load_SBit_Image	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+TT_Load_SBit_Line_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+TT_Load_SBit_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+TT_Load_SBit_Strikes	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+TT_Load_Small_SBit_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+blit_sbit	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\sfnt\ttsbit.c
+Get_Char_Index	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttdriver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1driver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1driver.c
+Get_Kerning	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttdriver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1driver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1driver.c
+Init_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttdriver.c
+Load_Glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttdriver.c
+Set_Char_Sizes	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttdriver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1driver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1driver.c
+Set_Pixel_Sizes	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttdriver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1driver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1driver.c
+find_encoding	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttdriver.c
+tt_get_interface	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttdriver.c
+tt_get_sfnt_table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttdriver.c
+Get_Advance_Widths	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttgload.c
+Get_HMetrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttgload.c
+Load_Simple	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttgload.c
+TT_Get_Metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttgload.c
+compute_glyph_metrics	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttgload.c
+load_truetype_glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttgload.c
+mount_zone	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttgload.c
+translate_array	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttgload.c
+Compute_Funcs	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Compute_Point_Displacement	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Compute_Round	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Current_Ppem	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Current_Ratio	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Direct_Move	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Direct_Move_X	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Direct_Move_Y	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Dual_Project	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Free_Project	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+GetShortIns	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Init_Context	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_AA	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ABS	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ADD	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ALIGNPTS	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ALIGNRP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_AND	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_CALL	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_CEILING	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_CINDEX	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_CLEAR	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_DEBUG	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_DELTAC	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_DELTAP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_DEPTH	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_DIV	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_DUP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_EIF	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ELSE	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ENDF	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_EQ	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_EVEN	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_FDEF	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_FLIPOFF	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_FLIPON	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_FLIPPT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_FLIPRGOFF	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_FLIPRGON	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_FLOOR	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_GC	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_GETINFO	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_GFV	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_GPV	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_GT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_GTEQ	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_Goto_CodeRange	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_IDEF	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_IF	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_INSTCTRL	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_IP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ISECT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_IUP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_JMPR	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_JROF	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_JROT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_LOOPCALL	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_LT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_LTEQ	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MAX	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MD	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MDAP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MDRP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MIAP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MIN	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MINDEX	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MIRP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MPPEM	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MPS	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MSIRP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_MUL	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_NEG	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_NEQ	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_NOT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_NPUSHB	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_NPUSHW	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_NROUND	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ODD	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_OR	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_POP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_PUSHB	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_PUSHW	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_RCVT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_RDTG	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ROFF	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ROLL	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_ROUND	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_RS	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_RTDG	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_RTG	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_RTHG	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_RUTG	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_S45ROUND	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SANGW	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SCANCTRL	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SCANTYPE	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SCFS	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SCVTCI	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SDB	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SDPVTL	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SDS	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SFVFS	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SFVTCA	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SFVTL	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SFVTPV	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SHC	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SHP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SHPIX	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SHZ	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SLOOP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SMD	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SPVFS	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SPVTCA	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SPVTL	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SROUND	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SRP0	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SRP1	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SRP2	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SSW	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SSWCI	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SUB	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SVTCA	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SWAP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SZP0	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SZP1	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SZP2	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SZPS	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_SxVTL	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_UNKNOWN	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_UTP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_WCVTF	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_WCVTP	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Ins_WS	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Interp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Move_CVT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Move_CVT_Stretched	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Move_Zp2_Point	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Norm	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Normalize	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Project	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Project_x	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Project_y	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Read_CVT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Read_CVT_Stretched	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Round_Down_To_Grid	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Round_None	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Round_Super	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Round_Super_45	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Round_To_Double_Grid	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Round_To_Grid	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Round_To_Half_Grid	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Round_Up_To_Grid	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+SetSuperRound	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Shift	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+SkipCode	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+TT_Clear_CodeRange	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+TT_Destroy_Context	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+TT_Done_Context	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+TT_Goto_CodeRange	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+TT_Load_Context	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+TT_New_Context	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+TT_RunIns	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+TT_Run_Context	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+TT_Save_Context	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+TT_Set_CodeRange	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Update_Max	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Write_CVT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Write_CVT_Stretched	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttinterp.c
+Get_Name	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttobjs.c
+TT_Done_Driver	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttobjs.c
+TT_Done_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttobjs.c
+TT_Done_GlyphSlot	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttobjs.c
+TT_Done_Size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttobjs.c
+TT_Init_Driver	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttobjs.c
+TT_Init_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttobjs.c
+TT_Init_GlyphSlot	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttobjs.c
+TT_Init_Size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttobjs.c
+TT_Reset_Size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttobjs.c
+TT_Load_CVT	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttpload.c
+TT_Load_Locations	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttpload.c
+TT_Load_Programs	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\truetype\ttpload.c
+T1_Done_AFM	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1afm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1afm.c
+T1_Get_Kerning	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1afm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1afm.c
+T1_Read_AFM	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1afm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1afm.c
+afm_atoi	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1afm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1afm.c
+afm_atoindex	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1afm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1afm.c
+compare_kern_pairs	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1afm.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1afm.c
+Get_Interface	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1driver.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1driver.c
+T1_Add_Contours	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+T1_Add_Points	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+T1_Compute_Max_Advance	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+T1_Done_Builder	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+T1_Init_Builder	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+T1_Init_Decoder	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+T1_Load_Glyph	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+T1_Parse_CharStrings	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+close_open_path	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+gload_closepath	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+gload_endchar	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+gload_ignore	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+gload_rlineto	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+gload_rmoveto	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+gload_rrcurveto	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+gload_sbw	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+lookup_glyph_by_stdcharcode	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+maxadv_error	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+maxadv_sbw	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+t1operator_flex	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c
+t1operator_seac	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1gload.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+T1_Done_Glyph_Hinter	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+T1_Done_Size_Hinter	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+T1_Hint_Points	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+T1_Hint_Stems	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+T1_New_Glyph_Hinter	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+T1_New_Size_Hinter	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+T1_Reset_Size_Hinter	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_hint_horizontal_stems	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_hint_point	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_hint_vertical_stems	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_hinter_changehints	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_hinter_ignore	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_hinter_stem	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_hinter_stem3	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_set_blue_zones	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_set_snap_zones	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_sort_blues	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+t1_sort_hints	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1hinter.c
+Do_Def_Error	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Do_Def_Font	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Do_Def_FontInfo	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Do_Def_Ignore	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Do_Def_Private	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Do_Put_Encoding	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Do_RD_Charstrings	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Do_RD_Subrs	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Expect_Array_Arguments	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Expect_Dict_Arguments	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Expect_Keyword	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Expect_Keyword2	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Finalise_Parsing	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Init_T1_Parser	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Next_T1_Token	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Parse_Encoding	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+Parse_T1_FontProgram	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1load.c
+T1_Done_Driver	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1objs.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1objs.c
+T1_Done_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1objs.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1objs.c
+T1_Done_GlyphSlot	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1objs.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1objs.c
+T1_Done_Size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1objs.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1objs.c
+T1_Init_Driver	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1objs.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1objs.c
+T1_Init_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1objs.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1objs.c
+T1_Init_GlyphSlot	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1objs.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1objs.c
+T1_Init_Size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1objs.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1objs.c
+T1_Reset_Size	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1objs.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1objs.c
+CopyArray	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+CopyBBox	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+CopyBoolean	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+CopyFloat	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+CopyInteger	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+CopyMatrix	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+CopyString	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+T1_Add_Table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_Done_Table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+T1_New_Table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+parse_float	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+parse_int	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+parse_integer	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c
+reallocate_t1_table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1parse.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+Done_Tokenizer	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1tokens.c
+Find_Name	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1tokens.c
+New_Tokenizer	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1tokens.c
+Open_PrivateDict	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1tokens.c
+Read_PFB_Tag	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1tokens.c
+Read_Token	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1tokens.c
+grow	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1tokens.c
+hexa_value	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1tokens.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+lexico_strcmp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1tokens.c
+t1_decrypt	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1\t1tokens.c
+add_contour	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+add_point	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+add_point1	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+check_points	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+close_contour	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+start_point	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1gload.c
+T1_Open_Face	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+is_alpha	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+is_space	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+parse_charstrings	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+parse_dict	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+parse_encoding	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+parse_font_bbox	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+parse_font_name	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+parse_subrs	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+read_binary_data	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+skip_blackspace	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+skip_whitespace	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+t1_done_loader	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+t1_init_loader	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1load.c
+T1_Decrypt	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_Done_Parser	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_Get_Private_Dict	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_New_Parser	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_Release_Table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_ToBool	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_ToCoordArray	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_ToFixed	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_ToFixedArray	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_ToInt	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+T1_ToString	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+read_pfb_tag	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+shift_elements	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+t1_tobool	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+t1_tocoordarray	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+t1_tofixed	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+t1_tofixedarray	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+t1_toint	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c
+t1_tostring	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/freetype@@freetype\src\type1z\t1parse.c

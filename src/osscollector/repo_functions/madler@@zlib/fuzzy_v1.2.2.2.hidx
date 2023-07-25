@@ -1,0 +1,101 @@
+madler@@zlib	39	134	20023
+get_crc_table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\crc32.c
+make_crc_table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\crc32.c
+gzprintf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\gzio.c
+makefixed	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\inflate.c
+gen_trees_header	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\trees.c
+tr_static_init	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\trees.c
+zcalloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c
+zcfree	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c
+zlibCompileFlags	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c
+zlibVersion	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c
+bits	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\blast\blast.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c
+blast	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\blast\blast.c
+construct	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\blast\blast.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c
+decode	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\blast\blast.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c
+decomp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\blast\blast.c
+inf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\blast\blast.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\zpipe.c
+main	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\blast\blast.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\test.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream2\zstream_test.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\test.cc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\testzlib\testzlib.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\fitblk.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\zpipe.c
+outf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\blast\blast.c
+makefixed9	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\infback9\infback9.c
+attach	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+close	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+fillbuf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+flushbuf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+open	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+overflow	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+rdbuf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+seekoff	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+setcompressionlevel	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+setcompressionstrategy	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp
+sync	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+underflow	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream\zfstream.cpp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+disable_buffer	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+enable_buffer	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+open_mode	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+setbuf	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+setcompression	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+showmanyc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\iostream3\zfstream.cc
+longest_match	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\masmx86\gvmat32c.c
+match_init	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\masmx86\gvmat32c.c
+do_banner	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\minizip\miniunz.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\minizip\minizip.c
+do_help	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\minizip\miniunz.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\minizip\minizip.c
+getFileCrc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\minizip\minizip.c
+allocate_new_datablock	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\minizip\zip.c
+codes	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c
+dynamic	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c
+fixed	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c
+puff	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c
+stored	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c
+yank	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\puff\puff.c
+ReadFileMemory	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\testzlib\testzlib.c
+ExprMatch	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+TGZfname	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+TGZnotfound	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+error	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+getoct	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+help	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+makedir	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+matchname	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+push_attr	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+restore_attr	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+setfiletime	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+strtime	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+tar	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\contrib\untgz\untgz.c
+partcompress	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\fitblk.c
+quit	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\fitblk.c
+recompress	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\fitblk.c
+bye	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c
+gcd	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c
+gzheader	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c
+gzscan	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c
+gztack	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c
+read4	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c
+readin	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c
+readmore	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c
+rotate	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c
+skip	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzappend.c
+bail	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+bclose	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+bget4	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+bload	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+bopen	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+bskip	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+gzcopy	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+gzhead	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+gzinit	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+put4	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+zpull	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzjoin.c
+dice_off	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+dice_ulg	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+gzlog_close	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+gzlog_open	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+gzlog_write	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+lock	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+log_clean	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+make_off	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+make_ulg	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+recomp	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+unlock	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\gzlog.c
+def	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\zpipe.c
+zerr	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\examples\zpipe.c

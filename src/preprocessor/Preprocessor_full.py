@@ -10,7 +10,7 @@ import re
 import shutil
 import json
 import math
-import tlsh
+from simhash import Simhash
 
 """GLOBALS"""
 currentPath = os.getcwd()
@@ -19,8 +19,8 @@ sep_len = len(separator)
 # So far, do not change
 
 theta = 0.1  # Default value (0.1)
-tagDatePath = "/home/jeongwoo/PycharmProjects/BinCENT/src/osscollector/repo_date"  # Default path
-resultPath = "/home/jeongwoo/PycharmProjects/BinCENT/src/osscollector/repo_infos/"  # Default path
+tagDatePath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_date"  # Default path
+resultPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_functions\\"  # Default path
 verIDXpath = currentPath + "/verIDX/"  # Default path
 initialDBPath = currentPath + "/initialSigs/"  # Default path
 finalDBPath = currentPath + "/componentDB/"  # Default path of the final Component DB
@@ -83,7 +83,7 @@ def redundancyElimination():
         idx = 0
 
         for eachVersion in os.listdir(os.path.join(resultPath, repoName)):
-            versionName = eachVersion.split("info_")[1].replace(".txt", "")
+            versionName = eachVersion.split("fuzzy_")[1].replace(".hidx", "")
             if versionName == '' or versionName == ' ':
                 continue
             verTempLst.append(versionName)
@@ -91,7 +91,7 @@ def redundancyElimination():
 
         try:
             for versionName in verTempLst:
-                with open(os.path.join(resultPath, repoName, ("info_" + versionName + ".txt")), 'r',
+                with open(os.path.join(resultPath, repoName, ("fuzzy_" + versionName + ".hidx")), 'r',
                           encoding="UTF-8") as fp:
                     verDict[versionName] = idx
                     idx += 1
@@ -285,8 +285,9 @@ def codeSegmentation():
 
                         try:
                             for S_hashval in verDateDict[S]:
-                                score = tlsh.diffxlen(hashval, S_hashval)
-                                if int(score) <= 30:
+                                print(S_hashval)
+                                simhash_score = Simhash(S_hashval).distance(Simhash(hashval))
+                                if int(simhash_score) < 30:
                                     if verDateDict[S][hashval] == "NODATE" or verDateDict[OSS][hashval] == "NODATE":
                                         candiX[OSS] += 1
                                         temp[OSS].append(hashval)

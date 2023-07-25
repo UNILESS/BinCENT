@@ -1,0 +1,5 @@
+madler@@zlib	16	6	5507
+make_crc_table	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\crc32.c
+tr_static_init	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\trees.c
+zcalloc	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c
+zcfree	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c	C:\Users\sunup\PycharmProjects\BinCENT\src\osscollector/repo_src/madler@@zlib\zutil.c

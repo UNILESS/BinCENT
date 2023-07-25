@@ -17,7 +17,7 @@ gitCloneURLS = currentPath + "/sample"  # Please change to the correct file (the
 clonePath = currentPath + "/repo_src/"  # Default path
 tagDatePath = currentPath + "/repo_date/"  # Default path
 resultPath = currentPath + "/repo_functions/"  # Default path
-ctagsPath = "/usr/bin/ctags"  # Ctags binary path (please specify your own ctags path)
+ctagsPath = "ctags"  # Ctags binary path (please specify your own ctags path)
 
 # Generate directories
 shouldMake = [clonePath, tagDatePath, resultPath]
@@ -46,7 +46,7 @@ def normalize(string):
 
 def extract_names_and_counts(repoPath):
     possible = (".c", ".cc", ".cpp")
-    names = []
+    names = {}
 
     fileCnt = 0
     funcCnt = 0
@@ -78,12 +78,18 @@ def extract_names_and_counts(repoPath):
 
                         if i != '' and len(elemList) >= 8:
                             if func.fullmatch(elemList[3]):
-                                names.append(elemList[0])
+                                # Add a function
+                                if elemList[0] in names:
+                                    names[elemList[0]].append(filePath)
+                                else:
+                                    names[elemList[0]] = [filePath]
                                 funcCnt += 1
-                            elif variable.fullmatch(elemList[3]):
-                                names.append(elemList[0])
-                            elif array.fullmatch(elemList[3]):
-                                names.append(elemList[0])
+                            elif variable.fullmatch(elemList[3]) or array.fullmatch(elemList[3]):
+                                # Add a variable or array
+                                if elemList[0] in names:
+                                    names[elemList[0]].append(filePath)
+                                else:
+                                    names[elemList[0]] = [filePath]
 
                     lineCnt += len(lines)
 
@@ -97,6 +103,7 @@ def extract_names_and_counts(repoPath):
                     continue
 
     return names, fileCnt, funcCnt, lineCnt
+
 
 
 
@@ -181,9 +188,11 @@ def main():
 
             except subprocess.CalledProcessError as e:
                 print("Parser Error:", e)
+                traceback.print_exc()
                 continue
             except Exception as e:
                 print("Subprocess failed", e)
+                traceback.print_exc()
                 continue
 
 
