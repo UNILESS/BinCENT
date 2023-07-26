@@ -12,19 +12,16 @@ import subprocess
 import re
 import shutil
 import json
-import traceback
-
-from simhash import Simhash
 
 """GLOBALS"""
 currentPath = os.getcwd()
-theta = 0.5
+theta = 0.1
 resultPath = currentPath + "/res/"
 repoFuncPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_functions\\"
-verIDXpath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\preprocessor\\verIDX\\"
-initialDBPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\preprocessor\\initialSigs\\"
-finalDBPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\preprocessor\\componentDB\\"
-metaPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\preprocessor\\metaInfos\\"
+verIDXpath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\verIDX\\"
+initialDBPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\initialSigs\\"
+finalDBPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\componentDB\\"
+metaPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\metaInfos\\"
 aveFuncPath = metaPath + "aveFuncs"
 weightPath = metaPath + "weights/"
 ctagsPath = "ctags"
@@ -64,42 +61,28 @@ def hashing(repoPath):
 
             try:
                 # Execute radare2 command to get symbols
-                process = subprocess.Popen(['r2', '-c', '"isj"', filePath], stdout=subprocess.PIPE, stdin=subprocess.PIPE, shell=True)
+                symbolList = subprocess.check_output(
+                    'radare2 -c "isj" "' + filePath + '"', shell=True
+                ).decode()
 
-                output = process.communicate(b'y\n')[0].decode()
-
-                output_lines = output.splitlines()
-
-                for line in output_lines:
-                    if line.strip():  # Avoid empty lines
-                        try:
-                            # Validate line as JSON
-                            if line[0] != "[":
-                                line = "[" + line + "]"
-                            symbols = json.loads(line)
-
-                            for symbol in symbols:
-                                # Normalizing the symbol names
-                                normalizedSymbol = normalize(symbol["realname"])
-
-                                storedPath = filePath.replace(repoPath, "")
-                                if normalizedSymbol not in resDict:
-                                    resDict[normalizedSymbol] = []
-                                resDict[normalizedSymbol].append(storedPath)
-
-                        except json.JSONDecodeError:
-                            # Skip lines that cannot be parsed as JSON
-                            continue
+                symbols = json.loads(symbolList)  # as radare2 returns a json
 
                 fileCnt += 1
 
+                for symbol in symbols:
+                    # Normalizing the symbol names
+                    normalizedSymbol = normalize(symbol["name"])
+
+                    storedPath = filePath.replace(repoPath, "")
+                    if normalizedSymbol not in resDict:
+                        resDict[normalizedSymbol] = []
+                    resDict[normalizedSymbol].append(storedPath)
+
             except subprocess.CalledProcessError as e:
                 print("Parser Error:", e)
-                traceback.print_exc()
                 continue
             except Exception as e:
                 print("Subprocess failed", e)
-                traceback.print_exc()
                 continue
 
     return resDict, fileCnt
@@ -152,6 +135,8 @@ def readWeigts(repoName):
 
 
 def detector(inputDict, inputRepo):
+    componentDB = {}
+
     componentDB = readComponentDB()
 
     fres = open(resultPath + "result_" + inputRepo, 'w')
@@ -168,18 +153,8 @@ def detector(inputDict, inputRepo):
             if hashval in inputDict:
                 commonFunc.append(hashval)
                 comOSSFuncs += 1.0
-            else:
-                for thash in inputDict:
-                    score = Simhash(hashval).distance(Simhash(thash))
-                    if int(score) <= 25:  # Here, the threshold is 30, but it can be adjusted according to the needs.
-                        commonFunc.append(thash)
-                        comOSSFuncs += 1.0
-                        break
 
-        match_score = comOSSFuncs / totOSSFuncs
-        print(comOSSFuncs, totOSSFuncs, match_score)
-
-        if match_score >= theta:
+        if (comOSSFuncs / totOSSFuncs) >= theta:
             verPredictDict = {}
             allVerList, idx2Ver = readAllVers(repoName)
 
@@ -211,6 +186,8 @@ def detector(inputDict, inputRepo):
                     predictOSSDict[ohash] = opath.split('\t')
 
             used = 0
+            unused = 0
+            modified = 0
             strChange = False
 
             for ohash in predictOSSDict:
@@ -229,20 +206,29 @@ def detector(inputDict, inputRepo):
 
                     flag = 1
 
-                if flag == 0:
+                else:
                     for thash in inputDict:
-                        score = Simhash(ohash).distance(Simhash(thash))
+                        score = tlsh.diffxlen(ohash, thash)
                         if int(score) <= 30:
-                            strChange = True
+                            modified += 1
+
+                            nflag = 0
+                            for opath in predictOSSDict[ohash]:
+                                for tpath in inputDict[thash]:
+                                    if opath in tpath:
+                                        nflag = 1
+                            if nflag == 0:
+                                strChange = True
 
                             flag = 1
 
                             break  # TODO: Suppose just only one function meet.
+                if flag == 0:
+                    unused += 1
 
             fres.write('\t'.join(
-                [inputRepo, repoName, predictedVer, str(used), str(strChange)]) + '\n')
+                [inputRepo, repoName, predictedVer, str(used), str(unused), str(modified), str(strChange)]) + '\n')
     fres.close()
-
 
 
 def main(inputPath, inputRepo):
@@ -257,10 +243,10 @@ if __name__ == "__main__":
     testmode = 1
 
     if testmode:
-        inputPath = currentPath + "\\crown"
+        inputPath = currentPath + "\\crown-development"
     else:
         inputPath = sys.argv[1]
 
-    inputRepo = inputPath.split('\\')[-1]
+    inputRepo = inputPath.split('/')[-1]
 
     main(inputPath, inputRepo)

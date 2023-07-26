@@ -19,8 +19,8 @@ sep_len = len(separator)
 # So far, do not change
 
 theta = 0.1  # Default value (0.1)
-tagDatePath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_date"  # Default path
-resultPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_functions\\"  # Default path
+tagDatePath = "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_date"  # Default path
+resultPath = "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_functions\\"  # Default path
 verIDXpath = currentPath + "/verIDX/"  # Default path
 initialDBPath = currentPath + "/initialSigs/"  # Default path
 finalDBPath = currentPath + "/componentDB/"  # Default path of the final Component DB
@@ -285,7 +285,6 @@ def codeSegmentation():
 
                         try:
                             for S_hashval in verDateDict[S]:
-                                print(S_hashval)
                                 simhash_score = Simhash(S_hashval).distance(Simhash(hashval))
                                 if int(simhash_score) < 30:
                                     if verDateDict[S][hashval] == "NODATE" or verDateDict[OSS][hashval] == "NODATE":
