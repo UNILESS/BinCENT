@@ -36,10 +36,11 @@ def get_all_strings():
     for s in idautils.Strings():
         # Clean the string and replace the new line characters with a space
         clean_s = clean_string(str(s)).replace("\n", " ")
-        strings.append({
-            "ea": s.ea,
-            "string": clean_s
-        })
+        if len(clean_s) > 2:  # Skip strings of length 2 or less
+            strings.append({
+                "ea": s.ea,
+                "string": clean_s
+            })
     return strings
 
 
@@ -54,17 +55,17 @@ def extract_features():
         if f:
             name = idc.GetFunctionName(f.startEA)
             feature = {
-                "_type": "tag",
+                # "_type": "tag",
                 "name": name,
-                "path": idc.GetInputFilePath(),
-                "file": True,
-                "language": "binary",
+                # "path": idc.GetInputFilePath(),
+                # "file": True,
+                # "language": "binary",
                 "typeref": "typename:" + get_function_signature(f.startEA),
                 "kind": "function",
                 "signature": get_function_signature(f.startEA),
-                "roles": "unknown",
-                "extras": "unknown",
-                "end": f.endEA,
+                # "roles": "unknown",
+                # "extras": "unknown",
+                # "end": f.endEA,
             }
             data.append(feature)
 
@@ -75,23 +76,30 @@ def extract_features():
                 name, kind = get_name_and_kind(ea)
                 if name:  # If name is not None or empty string
                     feature = {
-                        "_type": "tag",
+                        # "_type": "tag",
                         "name": name,
-                        "path": idc.GetInputFilePath(),
-                        "file": True,
-                        "language": "binary",
+                        # "path": idc.GetInputFilePath(),
+                        # "file": True,
+                        # "language": "binary",
                         "typeref": "typename:" + get_function_signature(ea),
                         "kind": kind,
                         "signature": get_function_signature(ea),
-                        "roles": "unknown",
-                        "extras": "unknown",
-                        "end": idc.SegEnd(seg_ea),
+                        # "roles": "unknown",
+                        # "extras": "unknown",
+                        # "end": idc.SegEnd(seg_ea),
                     }
                     data.append(feature)
 
     data.append({"strings": all_strings})  # add all strings at the end
 
-    with open("output.json", "w") as outfile:
+    # Remove duplicates by converting the list into a set and back to a list
+    data = list(set(json.dumps(d, sort_keys=True) for d in data))
+    data = [json.loads(d) for d in data]
+
+    input_file_name = idc.GetInputFile()
+    json_file_name = input_file_name + '.json'
+
+    with open(json_file_name, "w") as outfile:
         json.dump(data, outfile, indent=2)
 
 
