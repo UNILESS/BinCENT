@@ -1,0 +1,90 @@
+[
+  {
+    "_type": "tag",
+    "name": "L",
+    "path": "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\lua\\src\\linit.c",
+    "pattern": "/^LUALIB_API void luaL_openlibs (lua_State *L) {$/",
+    "file": true,
+    "language": "C",
+    "line": 30,
+    "typeref": "typename:lua_State *",
+    "kind": "parameter",
+    "scope": "luaL_openlibs",
+    "scopeKind": "function",
+    "roles": "def",
+    "extras": "fileScope",
+    "nth": 0
+  },
+  {
+    "_type": "tag",
+    "name": "LUA_LIB",
+    "path": "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\lua\\src\\linit.c",
+    "pattern": "/^#define LUA_LIB$/",
+    "file": true,
+    "language": "C",
+    "line": 9,
+    "kind": "macro",
+    "roles": "def",
+    "extras": "fileScope",
+    "end": 9
+  },
+  {
+    "_type": "tag",
+    "name": "lib",
+    "path": "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\lua\\src\\linit.c",
+    "pattern": "/^  const luaL_Reg *lib = lualibs;$/",
+    "file": true,
+    "language": "C",
+    "line": 31,
+    "typeref": "typename:const luaL_Reg *",
+    "kind": "local",
+    "scope": "luaL_openlibs",
+    "scopeKind": "function",
+    "roles": "def",
+    "extras": "fileScope",
+    "end": 31
+  },
+  {
+    "_type": "tag",
+    "name": "linit_c",
+    "path": "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\lua\\src\\linit.c",
+    "pattern": "/^#define linit_c$/",
+    "file": true,
+    "language": "C",
+    "line": 8,
+    "kind": "macro",
+    "roles": "def",
+    "extras": "fileScope",
+    "end": 8
+  },
+  {
+    "_type": "tag",
+    "name": "luaL_openlibs",
+    "path": "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\lua\\src\\linit.c",
+    "pattern": "/^LUALIB_API void luaL_openlibs (lua_State *L) {$/",
+    "language": "C",
+    "line": 30,
+    "typeref": "typename:LUALIB_API void",
+    "kind": "function",
+    "signature": "(lua_State * L)",
+    "roles": "def",
+    "end": 37
+  },
+  {
+    "_type": "tag",
+    "name": "lualibs",
+    "path": "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\lua\\src\\linit.c",
+    "pattern": "/^static const luaL_Reg lualibs[] = {$/",
+    "file": true,
+    "language": "C",
+    "line": 17,
+    "typeref": "typename:const luaL_Reg[]",
+    "kind": "variable",
+    "roles": "def",
+    "extras": "fileScope",
+    "end": 27,
+    "strings": [
+      ""
+    ]
+  }
+]

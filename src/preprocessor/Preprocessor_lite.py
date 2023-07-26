@@ -18,8 +18,8 @@ sep_len = len(separator)
 # So far, do not change #
 
 theta = 0.1  # Default value (0.1)
-tagDatePath = "C:\\Users\\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_date"  # Default path
-resultPath = "C:\\Users\\\sunup\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_functions\\"  # Default path
+tagDatePath = "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_date"  # Default path
+resultPath = "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\src\\osscollector\\repo_functions\\"  # Default path
 verIDXpath = currentPath + "/verIDX/"  # Default path
 initialDBPath = currentPath + "/initialSigs/"  # Default path
 finalDBPath = currentPath + "/componentDB/"  # Default path
