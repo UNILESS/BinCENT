@@ -57,7 +57,7 @@ def generate_tags(source_dir, output_dir):
 
 
 if __name__ == "__main__":
-    source_directory = "C:\\Users\\JeongWooLee\\PycharmProjects\\BinCENT\\lua\\src"
+    source_directory = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\lua\\src"
     output_directory = ".\\output\\lua"
 
     generate_tags(source_directory, output_directory)
