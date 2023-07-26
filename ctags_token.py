@@ -19,6 +19,7 @@ def generate_tags(source_dir, output_dir):
         os.makedirs(output_dir)
 
     for root, _, files in os.walk(source_dir):
+        print(f"Processing directory {root}...")
         for filename in files:
             if filename.endswith((".c", ".cpp")):
                 source_path = os.path.join(root, filename)
@@ -27,7 +28,7 @@ def generate_tags(source_dir, output_dir):
                         'ctags' + ' -f - --kinds-C=* --fields=* --output-format=json "' + source_path + '"', stderr=subprocess.STDOUT,
                         shell=True).decode('utf-8')
 
-                with open(source_path, "r") as source_file:
+                with open(source_path, "r", encoding='utf-8', errors='ignore') as source_file:
                     content = source_file.read()
                 strings = extract_strings(content)
 
@@ -49,15 +50,20 @@ def generate_tags(source_dir, output_dir):
 
                 pretty_json = json.dumps(parsed_data, indent=2)
 
+                output_subdir = os.path.relpath(root, source_dir)
+                output_subdir = os.path.join(output_dir, output_subdir)
+                if not os.path.exists(output_subdir):
+                    os.makedirs(output_subdir)
+
                 output_filename = filename + ".json"
-                output_path = os.path.join(output_dir, output_filename)
+                output_path = os.path.join(output_subdir, output_filename)
 
                 with open(output_path, "w") as output_file:
                     output_file.write(pretty_json)
 
 
 if __name__ == "__main__":
-    source_directory = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\lua\\src"
-    output_directory = ".\\output\\lua"
+    source_directory = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\src"
+    output_directory = ".\\ctags"
 
     generate_tags(source_directory, output_directory)
