@@ -8,7 +8,6 @@ import sys
 # sys.path.insert(0, "../osscollector")
 # import OSS_Collector
 import re
-import tempfile
 import json
 import os
 import subprocess
@@ -54,7 +53,6 @@ def normalize(string):
         ' ')).lower()
 
 
-
 def hashing(repoPath):
     # This function is for extracting symbols from binary files
     fileCnt = 0
@@ -65,22 +63,22 @@ def hashing(repoPath):
             filePath = os.path.join(path, file)
 
             try:
-                # Create a temporary file
-                tmp = tempfile.NamedTemporaryFile(delete=False)
+                # Specify the output file path in the repoPath
+                output_path = os.path.join(repoPath, "tmp.json")
 
-                # Execute radare2 command to get symbols and save to the temporary file
-                command = f'radare2 -A -e bin.cache=true -c "islj" "{filePath}" > {tmp.name}'
-                process = subprocess.Popen(command, stdout=subprocess.PIPE, stdin=subprocess.PIPE, shell=True)
-                process.communicate()
+                # Execute radare2 command to get symbols and save to the output file
+                command = f'r2 -A -e bin.cache=true -c "islj" "{filePath}" > {output_path}'
 
-                # Read the temporary json file and load into python
-                with open(tmp.name, 'r') as f:
+                # subprocess.run() waits for the process to complete
+                subprocess.run(command, shell=True)
+
+                # Read the output json file and load into python
+                with open(output_path, 'r') as f:
                     json_str = f.read()
-                    json_str = json_str.split(']}')[0] + ']}'
                     json_obj = json.loads(json_str)
 
-                # Make sure to remove the temporary file
-                os.remove(tmp.name)
+                # Remove the output file
+                os.remove(output_path)
 
                 # Extract symbols from the JSON object
                 symbols = json_obj["symbols"]
