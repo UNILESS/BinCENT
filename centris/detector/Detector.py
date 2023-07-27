@@ -4,15 +4,16 @@ Author:		Seunghoon Woo (seunghoonwoo@korea.ac.kr)
 Modified: 	December 16, 2020.
 """
 
-import os
 import sys
 # sys.path.insert(0, "../osscollector")
 # import OSS_Collector
-import subprocess
 import re
-import shutil
+import tempfile
 import json
+import os
+import subprocess
 import traceback
+
 
 from simhash import Simhash
 
@@ -53,6 +54,7 @@ def normalize(string):
         ' ')).lower()
 
 
+
 def hashing(repoPath):
     # This function is for extracting symbols from binary files
     fileCnt = 0
@@ -63,18 +65,22 @@ def hashing(repoPath):
             filePath = os.path.join(path, file)
 
             try:
-                # Execute radare2 command to get symbols
-                process = subprocess.Popen('radare2 -A -e bin.cache=true -c "islj" "' + filePath + '"',
-                                           stdout=subprocess.PIPE,
-                                           stdin=subprocess.PIPE,
-                                           shell=True)
-                output, error = process.communicate(input=b'y\n')
+                # Create a temporary file
+                tmp = tempfile.NamedTemporaryFile(delete=False)
 
-                # Decode bytes to string and split the string into individual JSON objects
-                output_str = output.decode()
-                output_str = output_str.split(']}')[0] + ']}'
+                # Execute radare2 command to get symbols and save to the temporary file
+                command = f'r2 -A -e bin.cache=true -c "islj~{tmp_file_name}" "{filePath}"'
+                process = subprocess.Popen(command, shell=True)
+                process.communicate()
 
-                json_obj = json.loads(output_str)
+                # Read the temporary json file and load into python
+                with open(tmp.name, 'r') as f:
+                    json_str = f.read()
+                    json_str = json_str.split(']}')[0] + ']}'
+                    json_obj = json.loads(json_str)
+
+                # Make sure to remove the temporary file
+                os.remove(tmp.name)
 
                 # Extract symbols from the JSON object
                 symbols = json_obj["symbols"]
@@ -100,6 +106,7 @@ def hashing(repoPath):
                 continue
 
     return resDict, fileCnt
+
 
 
 def getAveFuncs():
