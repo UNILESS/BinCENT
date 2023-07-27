@@ -4,15 +4,15 @@ Author:		Seunghoon Woo (seunghoonwoo@korea.ac.kr)
 Modified: 	December 16, 2020.
 """
 
+import os
 import sys
 # sys.path.insert(0, "../osscollector")
 # import OSS_Collector
-import re
-import json
-import os
 import subprocess
+import re
+import shutil
+import json
 import traceback
-
 
 from simhash import Simhash
 
@@ -63,22 +63,18 @@ def hashing(repoPath):
             filePath = os.path.join(path, file)
 
             try:
-                # Specify the output file path in the repoPath
-                output_path = os.path.join(repoPath, "tmp.json")
+                # Execute radare2 command to get symbols
+                process = subprocess.Popen('radare2 -A -e bin.cache=true -c "islj" "' + filePath + '"',
+                                           stdout=subprocess.PIPE,
+                                           stdin=subprocess.PIPE,
+                                           shell=True)
+                output, error = process.communicate(input=b'y\n')
 
-                # Execute radare2 command to get symbols and save to the output file
-                command = f'r2 -A -e bin.cache=true -c "islj" "{filePath}" > {output_path}'
+                # Decode bytes to string and split the string into individual JSON objects
+                output_str = output.decode()
+                output_str = output_str.split(']}')[0] + ']}'
 
-                # subprocess.run() waits for the process to complete
-                subprocess.run(command, shell=True)
-
-                # Read the output json file and load into python
-                with open(output_path, 'r') as f:
-                    json_str = f.read()
-                    json_obj = json.loads(json_str)
-
-                # Remove the output file
-                os.remove(output_path)
+                json_obj = json.loads(output_str)
 
                 # Extract symbols from the JSON object
                 symbols = json_obj["symbols"]
@@ -104,7 +100,6 @@ def hashing(repoPath):
                 continue
 
     return resDict, fileCnt
-
 
 
 def getAveFuncs():
@@ -267,7 +262,7 @@ if __name__ == "__main__":
     testmode = 1
 
     if testmode:
-        inputPath = currentPath + "\\mongodb"
+        inputPath = currentPath + "\\crown"
     else:
         inputPath = sys.argv[1]
 
