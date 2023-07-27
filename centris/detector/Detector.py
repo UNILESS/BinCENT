@@ -14,12 +14,11 @@ import shutil
 import json
 import traceback
 
-import tlsh
 from simhash import Simhash
 
 """GLOBALS"""
 currentPath = os.getcwd()
-theta = 0.1
+theta = 100
 resultPath = currentPath + "/res/"
 repoFuncPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\osscollector\\repo_functions\\"
 verIDXpath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\verIDX\\"
@@ -65,7 +64,7 @@ def hashing(repoPath):
 
             try:
                 # Execute radare2 command to get symbols
-                process = subprocess.Popen('radare2 -A -c "islj" "' + filePath + '"',
+                process = subprocess.Popen('radare2 -A -e bin.cache=true -c "islj" "' + filePath + '"',
                                            stdout=subprocess.PIPE,
                                            stdin=subprocess.PIPE,
                                            shell=True)
@@ -170,6 +169,9 @@ def detector(inputDict, inputRepo):
                 commonFunc.add(hashval)
                 comOSSFuncs += 1.0
 
+        print(repoName, comOSSFuncs, commonFunc, totOSSFuncs, comOSSFuncs / totOSSFuncs)
+        print("\n")
+
         if (comOSSFuncs / totOSSFuncs) >= theta:
             verPredictDict = {}
             allVerList, idx2Ver = readAllVers(repoName)
@@ -226,7 +228,7 @@ def detector(inputDict, inputRepo):
                     for thash in inputDict:
                         # score = tlsh.diff(tlsh.hash(ohash.encode()), tlsh.hash(thash.encode()))
                         score = Simhash(ohash).distance(Simhash(thash))
-                        if int(score) <= 10:  # 15
+                        if int(score) <= 10:  # 10
                             modified += 1
 
                             nflag = 0
@@ -260,7 +262,7 @@ if __name__ == "__main__":
     testmode = 1
 
     if testmode:
-        inputPath = currentPath + "\\crown"
+        inputPath = currentPath + "\\mongodb"
     else:
         inputPath = sys.argv[1]
 

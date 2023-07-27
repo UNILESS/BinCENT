@@ -13,7 +13,7 @@ import traceback
 """GLOBALS"""
 
 currentPath = os.path.dirname(os.path.realpath(__file__))
-gitCloneURLS = currentPath + "/sample"  # Please change to the correct file (the "sample" file contains only 10 git-clone urls)
+gitCloneURLS = currentPath + "/sample_origin"  # Please change to the correct file (the "sample" file contains only 10 git-clone urls)
 clonePath = currentPath + "/repo_src/"  # Default path
 tagDatePath = currentPath + "/repo_date/"  # Default path
 resultPath = currentPath + "/repo_functions/"  # Default path
