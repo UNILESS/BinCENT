@@ -2,27 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/LuaJIT@@LuaJIT" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/bkaradzic@@bgfx" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/bkaradzic@@bimg" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/bkaradzic@@bx" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/bulletphysics@@bullet3" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/codeplea@@tinyexpr" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/freetype@@freetype" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/kcat@@openal-soft" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/lua@@lua" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/madler@@zlib" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/nothings@@stb" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/LuaJIT@@LuaJIT" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/bkaradzic@@bgfx" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/bkaradzic@@bimg" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/bkaradzic@@bx" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/bulletphysics@@bullet3" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/codeplea@@tinyexpr" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/freetype@@freetype" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/kcat@@openal-soft" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/lua@@lua" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/madler@@zlib" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/nothings@@stb" vcs="Git" />
   </component>
 </project>
