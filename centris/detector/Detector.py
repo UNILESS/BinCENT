@@ -69,8 +69,8 @@ def hashing(repoPath):
                 tmp = tempfile.NamedTemporaryFile(delete=False)
 
                 # Execute radare2 command to get symbols and save to the temporary file
-                command = f'r2 -A -e bin.cache=true -c "islj~{tmp_file_name}" "{filePath}"'
-                process = subprocess.Popen(command, shell=True)
+                command = f'radare2 -A -e bin.cache=true -c "islj" "{filePath}" > {tmp.name}'
+                process = subprocess.Popen(command, stdout=subprocess.PIPE, stdin=subprocess.PIPE, shell=True)
                 process.communicate()
 
                 # Read the temporary json file and load into python
