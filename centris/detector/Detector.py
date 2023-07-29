@@ -262,7 +262,7 @@ if __name__ == "__main__":
     testmode = 1
 
     if testmode:
-        inputPath = currentPath + "\\crown"
+        inputPath = currentPath + "\\mongodb"
     else:
         inputPath = sys.argv[1]
 
