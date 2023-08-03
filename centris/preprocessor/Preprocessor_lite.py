@@ -18,8 +18,8 @@ sep_len = len(separator)
 # So far, do not change #
 
 theta = 0.1  # Default value (0.1)
-tagDatePath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\osscollector\\repo_date"  # Default path
-resultPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\osscollector\\repo_functions\\"  # Default path
+tagDatePath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/osscollector/repo_date"  # Default path
+resultPath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/osscollector/repo_functions/"  # Default path
 verIDXpath = currentPath + "/verIDX/"  # Default path
 initialDBPath = currentPath + "/initialSigs/"  # Default path
 finalDBPath = currentPath + "/componentDB/"  # Default path
@@ -214,7 +214,11 @@ def readVerDate(verDateDict, repoName):
             body = ''.join(fp.readlines()).strip()
             for eachLine in body.split('\n'):
                 hashval = eachLine.split('\t')[0]
-                date = eachLine.split('\t')[1]
+                parts = eachLine.split('\t')
+                if len(parts) > 1:
+                    date = parts[1]
+                else:
+                    date = "NODATE"  # or some default value
                 verDateDict[repoName][hashval] = date
     return verDateDict
 

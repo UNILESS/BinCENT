@@ -9,3 +9,4 @@ git clone https://github.com/LuaJIT/LuaJIT
 git clone https://github.com/kcat/openal-soft
 git clone https://github.com/nothings/stb
 git clone https://github.com/codeplea/tinyexpr
+git clone httpsL//github.com/openssl/openssl

@@ -13,6 +13,7 @@ import re
 import shutil
 import json
 import traceback
+import r2pipe
 
 from simhash import Simhash
 
@@ -20,11 +21,11 @@ from simhash import Simhash
 currentPath = os.getcwd()
 theta = 100
 resultPath = currentPath + "/res/"
-repoFuncPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\osscollector\\repo_functions\\"
-verIDXpath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\verIDX\\"
-initialDBPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\initialSigs\\"
-finalDBPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\componentDB\\"
-metaPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\metaInfos\\"
+repoFuncPath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/osscollector/repo_functions/"
+verIDXpath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/preprocessor/verIDX/"
+initialDBPath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/preprocessor/initialSigs/"
+finalDBPath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/preprocessor/componentDB/"
+metaPath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/preprocessor/metaInfos/"
 aveFuncPath = metaPath + "aveFuncs"
 weightPath = metaPath + "weights/"
 ctagsPath = "ctags"
@@ -53,6 +54,7 @@ def normalize(string):
         ' ')).lower()
 
 
+
 def hashing(repoPath):
     # This function is for extracting symbols from binary files
     fileCnt = 0
@@ -63,21 +65,12 @@ def hashing(repoPath):
             filePath = os.path.join(path, file)
 
             try:
-                # Execute radare2 command to get symbols
-                process = subprocess.Popen('radare2 -A -e bin.cache=true -c "islj" "' + filePath + '"',
-                                           stdout=subprocess.PIPE,
-                                           stdin=subprocess.PIPE,
-                                           shell=True)
-                output, error = process.communicate(input=b'y\n')
+                # Create a radare2 instance with the binary file
+                r2 = r2pipe.open(filePath)
+                r2.cmd('aaa')  # Analyze all
 
-                # Decode bytes to string and split the string into individual JSON objects
-                output_str = output.decode()
-                output_str = output_str.split(']}')[0] + ']}'
-
-                json_obj = json.loads(output_str)
-
-                # Extract symbols from the JSON object
-                symbols = json_obj["symbols"]
+                # Get symbols
+                symbols = r2.cmdj('isj')
 
                 fileCnt += 1
 
@@ -90,10 +83,6 @@ def hashing(repoPath):
                         resDict[normalizedSymbol] = []
                     resDict[normalizedSymbol].append(storedPath)
 
-            except subprocess.CalledProcessError as e:
-                print("Parser Error:", e)
-                traceback.print_exc()
-                continue
             except Exception as e:
                 print("Subprocess failed", e)
                 traceback.print_exc()
@@ -262,7 +251,7 @@ if __name__ == "__main__":
     testmode = 1
 
     if testmode:
-        inputPath = currentPath + "\\mongodb"
+        inputPath = currentPath + "/redis"
     else:
         inputPath = sys.argv[1]
 
