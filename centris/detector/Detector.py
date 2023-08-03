@@ -21,13 +21,13 @@ from simhash import Simhash
 currentPath = os.getcwd()
 theta = 100
 resultPath = currentPath + "/res/"
-repoFuncPath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/osscollector/repo_functions/"
-verIDXpath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/preprocessor/verIDX/"
-initialDBPath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/preprocessor/initialSigs/"
-finalDBPath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/preprocessor/componentDB/"
-metaPath = "/home/jeongwoo/PycharmProjects/BinCENT/centris/preprocessor/metaInfos/"
+repoFuncPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\osscollector\\repo_functions"
+verIDXpath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\verIDX\\"
+initialDBPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\initialSigs\\"
+finalDBPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\componentDB\\"
+metaPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\metaInfos\\"
 aveFuncPath = metaPath + "aveFuncs"
-weightPath = metaPath + "weights/"
+weightPath = metaPath + "weights\\"
 ctagsPath = "ctags"
 
 shouldMake = [resultPath]
@@ -251,7 +251,7 @@ if __name__ == "__main__":
     testmode = 1
 
     if testmode:
-        inputPath = currentPath + "/redis"
+        inputPath = currentPath + "/crown"
     else:
         inputPath = sys.argv[1]
 

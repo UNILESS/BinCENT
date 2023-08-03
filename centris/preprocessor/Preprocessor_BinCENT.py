@@ -231,109 +231,40 @@ def getAveFuncs():
 
 
 def codeSegmentation():
-    aveFuncs = getAveFuncs()
+    for repoName in os.listdir(initialDBPath):
+        print(repoName)
 
-    # For printing process
+        tempDateDict = {}
+        if os.path.isfile(os.path.join(finalDBPath, repoName + "_sig")):
+            continue
 
-    l = 1
-    tot = len(os.listdir(initialDBPath))
-    print('[+] Read OSS signatures..')
-    OSSList = os.listdir(initialDBPath)
-
-    versSignatures = {}
-    dateSignatures = {}
-    uniqueFuncs = {}
-
-    with open(metaPath + "uniqueFuncs", 'r', encoding="UTF-8") as fp:
-        jsonStr = json.load(fp)
-        for eachVal in jsonStr:
-            hashval = eachVal['hash']
-            uniqueFuncs[hashval] = eachVal['OSS']
-
-    verDateDict = {}
-
-    for S_sig in OSSList:
-        print(l, '/', tot, S_sig)
-
-        S = S_sig.replace("_sig", "")
-        l += 1
-
-        possibleMembers = {}
-        candiX = {}
-        removedFuncs = []
-
-        if S not in verDateDict:
-            verDateDict = readVerDate(verDateDict, S)
-
-        with open(initialDBPath + S_sig, 'r', encoding="UTF-8") as fs:
-            jsonStr = json.load(fs)
-            if len(jsonStr) == 0:
-                continue
-            else:
-                temp = {}
-                for eachVal in jsonStr:
-                    hashval = eachVal['hash']
-
-                    for OSS in uniqueFuncs[hashval]:
-                        if OSS == S:
-                            continue
-
-                        if OSS not in candiX:
-                            temp[OSS] = []
-                            candiX[OSS] = 0
-
-                        if OSS not in verDateDict:
-                            verDateDict = readVerDate(verDateDict, OSS)
-
-                        try:
-                            if hashval not in verDateDict[S]:
-                                continue
-
-                            if verDateDict[S][hashval] == "NODATE" or verDateDict[OSS][hashval] == "NODATE":
-                                candiX[OSS] += 1
-                                temp[OSS].append(hashval)
-
-                            elif verDateDict[OSS][hashval] <= verDateDict[S][hashval]:
-                                candiX[OSS] += 1
-                                temp[OSS].append(hashval)
-                        except:
-                            pass
-
-                for X in candiX:
-                    if aveFuncs[X] == 0:
+        funcDateDict = {}
+        if os.path.isfile(os.path.join(funcDatePath, repoName + "_funcdate")):
+            with open(os.path.join(funcDatePath, repoName + "_funcdate"), 'r', encoding="UTF-8") as fp:
+                lines = [l.strip('\n\r') for l in fp.readlines()]
+                for eachLine in lines:
+                    if eachLine == '' or eachLine == ' ':
                         continue
+                    hashval, date = eachLine.split('\t')
+                    funcDateDict[hashval] = date
 
-                    elif len(verDateDict[X]) == 0:
+        signature = {}
+        if os.path.isfile(os.path.join(initialDBPath, repoName + "_sig")):
+            with open(os.path.join(initialDBPath, repoName + "_sig"), 'r', encoding="UTF-8") as fp:
+                lines = [l.strip('\n\r') for l in fp.readlines()]
+                for eachLine in lines:
+                    if eachLine == '' or eachLine == ' ':
                         continue
+                    components = eachLine.split('\t')
+                    hashval = components[0]
+                    versions = components[1:]
+                    signature[hashval] = versions
 
-                    elif (float(candiX[X]) / float(aveFuncs[X])) >= theta:
-                        if S not in possibleMembers:
-                            possibleMembers[S] = []
-
-                        possibleMembers[S].append(X)
-                        removedFuncs.extend(temp[X])
-
-                if S not in possibleMembers:
-                    shutil.copy(os.path.join(initialDBPath, S) + "_sig", os.path.join(finalDBPath, S) + "_sig")
-
-                else:
-                    removedFuncs = set(removedFuncs)
-                    saveJson = []
-                    fres = open(os.path.join(finalDBPath, S) + "_sig", 'w')
-
-                    for eachVal in jsonStr:
-                        temp = {}
-                        hashval = eachVal['hash']
-
-                        if hashval not in removedFuncs:
-                            versLst = eachVal['vers']
-                            temp["hash"] = hashval
-                            temp["vers"] = versLst
-                            saveJson.append(temp)
-
-                    fres.write(json.dumps(saveJson))
-                    fres.close()
-
+        # For storing function hash signatures
+        sig = open(finalDBPath + repoName + "_sig", 'w')
+        for hashval in signature:
+            sig.write(hashval + '\t' + funcDateDict[hashval] + '\t' + '\t'.join(signature[hashval]) + '\n')
+        sig.close()
 
 def main():
     redundancyElimination()
