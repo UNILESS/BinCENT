@@ -21,13 +21,13 @@ from simhash import Simhash
 currentPath = os.getcwd()
 theta = 100
 resultPath = currentPath + "/res/"
-repoFuncPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\osscollector\\repo_functions"
-verIDXpath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\verIDX\\"
-initialDBPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\initialSigs\\"
-finalDBPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\componentDB\\"
-metaPath = "C:\\Users\\sunup\\PycharmProjects\\BinCENT\\centris\\preprocessor\\metaInfos\\"
+repoFuncPath = "/Users/uni/PycharmProjects/BinCENT/centris/osscollector/repo_functions"
+verIDXpath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/verIDX/"
+initialDBPath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/initialSigs/"
+finalDBPath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/componentDB/"
+metaPath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/metaInfos/"
 aveFuncPath = metaPath + "aveFuncs"
-weightPath = metaPath + "weights\\"
+weightPath = metaPath + "weights/"
 ctagsPath = "ctags"
 
 shouldMake = [resultPath]
@@ -153,9 +153,11 @@ def detector(inputDict, inputRepo):
         if totOSSFuncs == 0.0:
             continue
         comOSSFuncs = 0.0
-        for hashval in componentDB[OSS]:
+        for combined_hash in componentDB[OSS]:
+            hashval, kind = combined_hash.split('|')  # Split to get both values
+
             if hashval in inputDict:
-                commonFunc.add(hashval)
+                commonFunc.add(combined_hash)  # You might want to add combined_hash instead depending on your use case
                 comOSSFuncs += 1.0
 
         print(repoName, comOSSFuncs, commonFunc, totOSSFuncs, comOSSFuncs / totOSSFuncs)
@@ -251,7 +253,7 @@ if __name__ == "__main__":
     testmode = 1
 
     if testmode:
-        inputPath = currentPath + "/crown"
+        inputPath = currentPath + "/busybox"
     else:
         inputPath = sys.argv[1]
 

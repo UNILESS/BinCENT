@@ -13,11 +13,11 @@ import traceback
 """GLOBALS"""
 
 currentPath = os.path.dirname(os.path.realpath(__file__))
-gitCloneURLS = currentPath + "/sample"  # Please change to the correct file (the "sample" file contains only 10 git-clone urls)
+gitCloneURLS = currentPath + "/sample_origin"  # Please change to the correct file (the "sample" file contains only 10 git-clone urls)
 clonePath = currentPath + "/repo_src/"  # Default path
 tagDatePath = currentPath + "/repo_date/"  # Default path
 resultPath = currentPath + "/repo_functions/"  # Default path
-ctagsPath = "ctags"  # Ctags binary path (please specify your own ctags path)
+ctagsPath = "/opt/homebrew/bin/ctags"  # Ctags binary path (please specify your own ctags path)
 
 # Generate directories
 shouldMake = [clonePath, tagDatePath, resultPath]
@@ -63,10 +63,20 @@ def extract_names_and_counts(repoPath):
 
                     for line in tagList.split('\n'):
                         if line:
-                            name = line.split('\t', 1)[0]  # First field is the name
-                            if name not in names:
-                                names[name] = []
-                            names[name].append(filePath)
+                            elements = line.split('\t')
+                            name = elements[0]  # First field is the name
+
+                            kind = None
+                            for element in elements[2:]:
+                                if element.startswith("kind:"):
+                                    kind = element.split(":", 1)[1]
+                                    break
+
+                            # Example: modify this part if you want to process/store kind differently
+                            name_kind_key = f"{name}|{kind}"  # Combining name and kind with a delimiter
+                            if name_kind_key not in names:
+                                names[name_kind_key] = []
+                            names[name_kind_key].append(filePath)
 
                 except subprocess.CalledProcessError as e:
                     print("Parser Error:", e)
@@ -78,8 +88,6 @@ def extract_names_and_counts(repoPath):
                     continue
 
     return names, fileCnt
-
-
 
 
 def indexing(resDict, title, filePath):
