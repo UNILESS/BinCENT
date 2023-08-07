@@ -21,7 +21,7 @@ from simhash import Simhash
 currentPath = os.getcwd()
 theta = 100
 resultPath = currentPath + "/res/"
-repoFuncPath = "/Users/uni/PycharmProjects/BinCENT/centris/osscollector/repo_functions"
+repoFuncPath = "/Users/uni/PycharmProjects/BinCENT/centris/osscollector/repo_functions/"
 verIDXpath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/verIDX/"
 initialDBPath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/initialSigs/"
 finalDBPath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/componentDB/"
@@ -70,13 +70,13 @@ def hashing(repoPath):
                 r2.cmd('aaa')  # Analyze all
 
                 # Get symbols
-                symbols = r2.cmdj('isj')
+                symbols = r2.cmdj('izzj')
 
                 fileCnt += 1
 
                 for symbol in symbols:
                     # Normalizing the symbol names
-                    normalizedSymbol = normalize(symbol["realname"])
+                    normalizedSymbol = normalize(symbol["string"])
 
                     storedPath = filePath.replace(repoPath, "")
                     if normalizedSymbol not in resDict:
@@ -154,7 +154,7 @@ def detector(inputDict, inputRepo):
             continue
         comOSSFuncs = 0.0
         for combined_hash in componentDB[OSS]:
-            hashval, kind = combined_hash.split('|')  # Split to get both values
+            hashval, kind = combined_hash.split('|**|')  # Split to get both values
 
             if hashval in inputDict:
                 commonFunc.add(combined_hash)  # You might want to add combined_hash instead depending on your use case
@@ -217,7 +217,6 @@ def detector(inputDict, inputRepo):
 
                 else:
                     for thash in inputDict:
-                        # score = tlsh.diff(tlsh.hash(ohash.encode()), tlsh.hash(thash.encode()))
                         score = Simhash(ohash).distance(Simhash(thash))
                         if int(score) <= 10:  # 10
                             modified += 1

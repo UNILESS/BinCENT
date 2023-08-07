@@ -24,9 +24,12 @@ def analyze_kind_from_file(input_filepath, output_filepath):
         percentage = round((count / total_count) * 100, 2)
         kind_counts[kind] = {"count": count, "percentage": percentage}
 
+    # 퍼센트가 높은 순서대로 정렬
+    sorted_kind_counts = dict(sorted(kind_counts.items(), key=lambda item: item[1]['percentage'], reverse=True))
+
     # 결과를 JSON 파일로 저장
     with open(output_filepath, 'w', encoding='utf-8') as f:
-        json.dump(kind_counts, f, ensure_ascii=False, indent=4, sort_keys=True)
+        json.dump(sorted_kind_counts, f, ensure_ascii=False, indent=4)
 
     print(f"{output_filepath}에 분석 결과가 저장되었습니다.")
 

@@ -29,8 +29,10 @@ def analyze_kind_from_file(input_filepath):
 # 실행
 input_file = "./componentDB/mirror@@busybox_sig"
 result = analyze_kind_from_file(input_file)
-for kind, info in result.items():
+
+# 백분율로 정렬하여 출력
+sorted_result = sorted(result.items(), key=lambda x: x[1]['percentage'], reverse=True)
+for kind, info in sorted_result:
     print(f"{kind}: Count - {info['count']}, Percentage - {info['percentage']}%")
 print("\n")
 print(input_file)
-
