@@ -54,7 +54,7 @@ def extract_names_and_counts(repoPath):
             if file.endswith(('.c', '.cc', '.cpp')):  # Check for C/C++ source files
                 try:
                     tagList = subprocess.check_output(
-                        f'{ctagsPath} -f - --fields=* {filePath}',
+                        f'{ctagsPath} -f - --kinds-C=* --fields=* {filePath}',
                         stderr=subprocess.STDOUT,
                         shell=True
                     ).decode()

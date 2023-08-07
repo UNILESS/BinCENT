@@ -31,6 +31,6 @@ def analyze_kind_from_file(input_filepath, output_filepath):
     print(f"{output_filepath}에 분석 결과가 저장되었습니다.")
 
 # 실행
-input_file = "./res/result_openssl"
-output_file = "openssl_analysis.json"  # 출력 파일명
+input_file = "./res/result_busybox"
+output_file = "busybox_analysis.json"  # 출력 파일명
 analyze_kind_from_file(input_file, output_file)
