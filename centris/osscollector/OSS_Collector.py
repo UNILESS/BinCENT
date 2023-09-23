@@ -13,98 +13,113 @@ import traceback
 """GLOBALS"""
 
 currentPath = os.path.dirname(os.path.realpath(__file__))
-gitCloneURLS = currentPath + "/sample_origin"  # Please change to the correct file (the "sample" file contains only 10 git-clone urls)
+gitCloneURLS = currentPath + "/sample_1-100"  # Please change to the correct file (the "sample" file contains only 10 git-clone urls)
 clonePath = currentPath + "/repo_src/"  # Default path
 tagDatePath = currentPath + "/repo_date/"  # Default path
 resultPath = currentPath + "/repo_functions/"  # Default path
-ctagsPath = "/opt/homebrew/bin/ctags"  # Ctags binary path (please specify your own ctags path)
+ctagsPath = "/usr/bin/ctags"  # Ctags binary path (please specify your own ctags path)
 
-# Generate directories
+# Generate directories`
 shouldMake = [clonePath, tagDatePath, resultPath]
 for eachRepo in shouldMake:
     if not os.path.isdir(eachRepo):
         os.mkdir(eachRepo)
 
 
-def removeComment(string):
-    # Code for removing C/C++ style comments. (Imported from VUDDY and ReDeBug.)
-    # ref: https://github.com/squizz617/vuddy
-    c_regex = re.compile(
-        r'(?P<comment>//.*?$|[{}]+)|(?P<multilinecomment>/\*.*?\*/)|(?P<noncomment>\'(\\.|[^\\\'])*\'|"(\\.|[^\\"])*"|.[^/\'"]*)',
-        re.DOTALL | re.MULTILINE)
-    return ''.join([c.group('noncomment') for c in c_regex.finditer(string) if c.group('noncomment')])
 
-
-def normalize(string):
-    # Code for normalizing the input string.
-    # LF and TAB literals, curly braces, and spaces are removed,
-    # and all characters are lowercased.
-    # ref: https://github.com/squizz617/vuddy
-    return ''.join(string.replace('\n', '').replace('\r', '').replace('\t', '').replace('{', '').replace('}', '').split(
-        ' ')).lower()
-
-
-def extract_names_and_counts(repoPath):
+def hashing(repoPath):
+    possible = (".c", ".cc", ".cpp")
     fileCnt = 0
-    names = {}
+    lineCnt = 0
+    featCnt = 0
+    resDict = {}
 
     for path, dir, files in os.walk(repoPath):
         for file in files:
             filePath = os.path.join(path, file)
-            if file.endswith(('.c', '.cc', '.cpp')):  # Check for C/C++ source files
+
+            if file.endswith(possible):
                 try:
-                    tagList = subprocess.check_output(
-                        f'{ctagsPath} -f - --kinds-C=* --fields=* {filePath}',
+                    ctags_output = subprocess.check_output(
+                        f'{ctagsPath} -f - --kinds-C=* --fields=* "{filePath}"',
                         stderr=subprocess.STDOUT,
                         shell=True
                     ).decode()
 
+                    f = open(filePath, 'r', encoding="UTF-8")
+                    lines = f.readlines()
+
                     fileCnt += 1
+                    lineCnt += len(lines)
 
-                    for line in tagList.split('\n'):
-                        if line:
-                            elements = line.split('\t')
-                            name = elements[0]  # First field is the name
+                    for line_number, line in enumerate(lines):
+                        # Extract string literals
+                        string_literals = re.findall(r'"([^"]*)"', line)
+                        for string_literal in string_literals:
+                            resDict[f"String_{line_number + 1}"] = {'type': 'string', 'file': filePath,
+                                                                    'value': string_literal}
 
-                            kind = None
-                            for element in elements[2:]:
-                                if element.startswith("kind:"):
-                                    kind = element.split(":", 1)[1]
-                                    break
+                    for line in ctags_output.split('\n'):
+                        fields = line.split('\t')
+                        if len(fields) < 4:
+                            continue
 
-                            # Example: modify this part if you want to process/store kind differently
-                            name_kind_key = f"{name}|{kind}"  # Combining name and kind with a delimiter
-                            if name_kind_key not in names:
-                                names[name_kind_key] = []
-                            names[name_kind_key].append(filePath)
+                        tag, filepath, line_number, kind = None, None, None, None
+
+                        for field in fields:
+                            if field.startswith("kind:"):
+                                kind = field.split(":")[1]
+                            elif field.startswith("line:"):
+                                line_number = int(field.split(":")[1])
+
+                        filepath = fields[1]
+
+                        tag = fields[0]  # The first field is usually the tag name
+
+                        if None in [tag, filepath, line_number, kind]:
+                            continue
+
+                        if kind == 'variable':  # Global variables
+                            variable_line = lines[line_number - 1].strip()
+                            variable_value = re.search(r'=\s*(.*);', variable_line)
+                            if variable_value:
+                                value = variable_value.group(1)
+                            else:
+                                value = None
+                            resDict[tag] = {'type': 'variable', 'file': filepath, 'value': value}
+
+                        elif kind == 'enumerator':  # Enumeration names
+                            enum_line = lines[line_number - 1].strip()
+                            enum_value = re.search(r'=\s*(\w+)', enum_line)
+                            if enum_value:
+                                value = enum_value.group(1)
+                            else:
+                                value = None
+                            resDict[tag] = {'type': 'enum', 'file': filepath, 'value': value}
+
+                        elif kind == 'function':  # Functions
+                            resDict[tag] = {'type': 'function', 'file': filepath}
 
                 except subprocess.CalledProcessError as e:
                     print("Parser Error:", e)
-                    traceback.print_exc()
                     continue
                 except Exception as e:
                     print("Subprocess failed", e)
-                    traceback.print_exc()
                     continue
 
-    return names, fileCnt
+    return resDict, fileCnt, featCnt, lineCnt
 
 
 def indexing(resDict, title, filePath):
-    # For indexing each OSS
-
     fres = open(filePath, 'w')
     fres.write(title + '\n')
 
-    for hashval in resDict:
-        if hashval == '' or hashval == ' ':
-            continue
-
-        fres.write(hashval)
-
-        for funcPath in resDict[hashval]:
-            fres.write('\t' + funcPath)
-        fres.write('\n')
+    for tag in resDict:
+        line = f"{tag}\t{resDict[tag]['type']}"
+        if 'value' in resDict[tag]:
+            line += f"\t{resDict[tag]['value']}"
+        line += f"\t{resDict[tag]['file']}"
+        fres.write(line + '\n')
 
     fres.close()
 
@@ -137,15 +152,17 @@ def main():
 
                 resDict = {}
                 fileCnt = 0
+                featCnt = 0
+                lineCnt = 0
 
                 if tagResult == "":
                     # No tags, only master repo
 
-                    resDict, fileCnt = extract_names_and_counts(clonePath + repoName)
+                    resDict, fileCnt, featCnt, lineCnt = hashing(clonePath + repoName)
                     if len(resDict) > 0:
                         if not os.path.isdir(resultPath + repoName):
                             os.mkdir(resultPath + repoName)
-                        title = '\t'.join([repoName, str(fileCnt)])
+                        title = '\t'.join([repoName, str(fileCnt), str(featCnt), str(lineCnt)])
                         resultFilePath = resultPath + repoName + '/fuzzy_' + repoName + '.hidx'  # Default file name: "fuzzy_OSSname.hidx"
 
                         indexing(resDict, title, resultFilePath)
@@ -156,12 +173,12 @@ def main():
 
                         checkoutCommand = subprocess.check_output("git checkout -f " + tag, stderr=subprocess.STDOUT,
                                                                   shell=True)
-                        resDict, fileCnt = extract_names_and_counts(clonePath + repoName)
+                        resDict, fileCnt, featCnt, lineCnt = hashing(clonePath + repoName)
 
                         if len(resDict) > 0:
                             if not os.path.isdir(resultPath + repoName):
                                 os.mkdir(resultPath + repoName)
-                            title = '\t'.join([repoName, str(fileCnt)])
+                            title = '\t'.join([repoName, str(fileCnt), str(featCnt), str(lineCnt)])
                             resultFilePath = resultPath + repoName + '/fuzzy_' + tag + '.hidx'
 
                             indexing(resDict, title, resultFilePath)
@@ -169,11 +186,9 @@ def main():
 
             except subprocess.CalledProcessError as e:
                 print("Parser Error:", e)
-                traceback.print_exc()
                 continue
             except Exception as e:
                 print("Subprocess failed", e)
-                traceback.print_exc()
                 continue
 
 

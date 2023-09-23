@@ -1,15 +1,13 @@
-"""
-Preprocessor.
-Author:		Seunghoon Woo (seunghoonwoo@korea.ac.kr)
-Modified: 	December 16, 2020.
-"""
-
 import os
 import sys
 import re
 import shutil
 import json
 import math
+import traceback
+import numpy
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 """GLOBALS"""
 currentPath = os.path.dirname(os.path.realpath(__file__))
@@ -18,8 +16,8 @@ sep_len = len(separator)
 # So far, do not change #
 
 theta = 0.1  # Default value (0.1)
-tagDatePath = "/Users/uni/PycharmProjects/BinCENT/centris/osscollector/repo_date"  # Default path
-resultPath = "/Users/uni/PycharmProjects/BinCENT/centris/osscollector/repo_functions/"  # Default path
+tagDatePath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/osscollector/repo_date"  # Default path
+resultPath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/osscollector/repo_functions/"  # Default path
 verIDXpath = currentPath + "/verIDX/"  # Default path
 initialDBPath = currentPath + "/initialSigs/"  # Default path
 finalDBPath = currentPath + "/componentDB/"  # Default path
@@ -64,7 +62,31 @@ def extractVerDate(repoName):
     return verDateDict
 
 
+def calculate_tfidf(corpus):
+    if not corpus:
+        print("Warning: Empty corpus. Returning empty TF-IDF scores.")
+        return {}
+
+    vectorizer = TfidfVectorizer()
+    X = vectorizer.fit_transform(corpus)
+    feature_names = vectorizer.get_feature_names_out()
+    doc = 0  # Assuming you want the TF-IDF scores for the first document in the corpus
+    feature_index = X[doc, :].nonzero()[1]
+    tfidf_scores = {feature_names[i]: X[doc, i] for i in feature_index}
+
+    return tfidf_scores
+
+def calculate_threshold(tfidf_scores):
+    scores = list(tfidf_scores.values())
+    mean_score = np.mean(scores)
+    std_dev = np.std(scores)
+    threshold = mean_score + std_dev  # You can adjust this formula as needed
+    return threshold
+
+global_feature_dates = {}
+
 def redundancyElimination():
+    global global_feature_dates
     for repoName in os.listdir(resultPath):
         print(repoName)
 
@@ -100,24 +122,42 @@ def redundancyElimination():
                             continue
 
                         hashval = eachLine.split('\t')[0]
-                        if hashval not in signature:
-                            signature[hashval] = []
-                            tempDateDict[hashval] = []
-                        signature[hashval].append(str(idx - 1))
+
+                        # Remove the "String_XXX_" part from the hashval
+                        cleaned_hashval = hashval.replace("String_", "").replace("_", "")
+
+                        if cleaned_hashval not in signature:
+                            signature[cleaned_hashval] = []
+                            tempDateDict[cleaned_hashval] = []
+                        signature[cleaned_hashval].append(str(idx - 1))
+
 
                         if versionName in verDateDict:
-                            tempDateDict[hashval].append(verDateDict[versionName])
+                            if cleaned_hashval in tempDateDict:  # 이 부분이 추가됨
+                                tempDateDict[cleaned_hashval].append(verDateDict[versionName])
                         else:
-                            tempDateDict[hashval].append("NODATE")
+                            if cleaned_hashval in tempDateDict:  # 이 부분이 추가됨
+                                tempDateDict[cleaned_hashval].append("NODATE")
 
         except Exception as e:
             print("Parsing error: ", e)
+            traceback.print_exc()
             continue
+
+        tfidf_scores = calculate_tfidf(signature)
+        threshold = calculate_threshold(tfidf_scores)
 
         # For storing function birthdate
         for hashval in tempDateDict:
             tempDateDict[hashval].sort()
             funcDateDict[hashval] = tempDateDict[hashval][0]
+
+            # Update global_feature_dates
+            if hashval not in global_feature_dates:
+                global_feature_dates[hashval] = {'date': funcDateDict[hashval], 'repo': repoName}
+            else:
+                if funcDateDict[hashval] < global_feature_dates[hashval]['date']:
+                    global_feature_dates[hashval] = {'date': funcDateDict[hashval], 'repo': repoName}
 
         fdate = open(funcDatePath + repoName + "_funcdate", 'w')
         for hashval in funcDateDict:
@@ -139,9 +179,11 @@ def redundancyElimination():
 
         # For storing OSS signatures
         f = open(initialDBPath + repoName + "_sig", 'w')
-
         saveJson = []
         for hashval in signature:
+            if hashval in tfidf_scores and tfidf_scores[hashval] < threshold:  # Use the calculated threshold
+                continue  # Skip this feature due to low TF-IDF score
+
             temp = {}
             temp["hash"] = hashval
             temp["vers"] = signature[hashval]
@@ -149,6 +191,30 @@ def redundancyElimination():
         f.write(json.dumps(saveJson))
         f.close()
 
+
+def removeRedundantFeatures():
+    global global_feature_dates
+    for repoName in os.listdir(initialDBPath):
+        to_remove = []
+        with open(os.path.join(initialDBPath, repoName), 'r', encoding="UTF-8") as f:
+            data = json.load(f)
+
+        for feature in data:
+            hashval = feature['hash']
+            feature_type = feature.get('type', None)
+            feature_value = feature.get('value', None)
+
+            unique_key = f"{hashval}_{feature_value}"
+
+            if unique_key in global_feature_dates:
+                if global_feature_dates[unique_key]['repo'] != repoName.replace("_sig", ""):
+                    to_remove.append(feature)
+
+        for feature in to_remove:
+            data.remove(feature)
+
+        with open(os.path.join(initialDBPath, repoName), 'w', encoding="UTF-8") as f:
+            json.dump(data, f)
 
 def saveMetaInfos():
     aveFuncJson = {}
@@ -338,6 +404,7 @@ def codeSegmentation():
 def main():
     redundancyElimination()
     saveMetaInfos()
+    removeRedundantFeatures()
     codeSegmentation()
 
 

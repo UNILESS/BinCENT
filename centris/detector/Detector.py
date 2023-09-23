@@ -15,17 +15,15 @@ import json
 import traceback
 import r2pipe
 
-from simhash import Simhash
-
 """GLOBALS"""
 currentPath = os.getcwd()
-theta = 100
+theta = 0
 resultPath = currentPath + "/res/"
-repoFuncPath = "/Users/uni/PycharmProjects/BinCENT/centris/osscollector/repo_functions/"
-verIDXpath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/verIDX/"
-initialDBPath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/initialSigs/"
-finalDBPath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/componentDB/"
-metaPath = "/Users/uni/PycharmProjects/BinCENT/centris/preprocessor/metaInfos/"
+repoFuncPath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/osscollector/repo_functions"
+verIDXpath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/preprocessor/verIDX/"
+initialDBPath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/preprocessor/initialSigs/"
+finalDBPath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/preprocessor/componentDB/"
+metaPath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/preprocessor/metaInfos/"
 aveFuncPath = metaPath + "aveFuncs"
 weightPath = metaPath + "weights/"
 ctagsPath = "ctags"
@@ -55,33 +53,86 @@ def normalize(string):
 
 
 
-def hashing(repoPath):
-    # This function is for extracting symbols from binary files
-    fileCnt = 0
+import struct
+
+def extract_various_data(data_bytes):
+    data_fragments = []
+
+    # Extract 2-byte integers
+    for i in range(0, len(data_bytes) - 1, 2):  # Ensure we have 2 bytes left
+        int_val = struct.unpack('<H', data_bytes[i:i+2])[0]
+        if int_val != 0:
+            data_fragments.append(f"{int_val}")
+
+    # Extract 4-byte integers
+    for i in range(0, len(data_bytes) - 3, 4):  # Ensure we have 4 bytes left
+        int_val = struct.unpack('<I', data_bytes[i:i+4])[0]
+        if int_val != 0:
+            data_fragments.append(f"{int_val}")
+
+    # Extract 8-byte integers
+    for i in range(0, len(data_bytes) - 7, 8):  # Ensure we have 8 bytes left
+        int_val = struct.unpack('<Q', data_bytes[i:i+8])[0]
+        if int_val != 0:
+            data_fragments.append(f"{int_val}")
+
+    # Extract 4-byte floats
+    for i in range(0, len(data_bytes) - 3, 4):  # Ensure we have 4 bytes left
+        float_val = struct.unpack('<f', data_bytes[i:i+4])[0]
+        if float_val != 0.0:
+            data_fragments.append(f"{float_val}")
+
+    # Extract 8-byte floats (double)
+    for i in range(0, len(data_bytes) - 7, 8):  # Ensure we have 8 bytes left
+        double_val = struct.unpack('<d', data_bytes[i:i+8])[0]
+        if double_val != 0.0:
+            data_fragments.append(f"{double_val}")
+
+    return data_fragments
+
+def extract_symbols_and_data(repoPath):
     resDict = {}
+    fileCnt = 0
 
     for path, dir, files in os.walk(repoPath):
         for file in files:
             filePath = os.path.join(path, file)
 
             try:
-                # Create a radare2 instance with the binary file
                 r2 = r2pipe.open(filePath)
                 r2.cmd('aaa')  # Analyze all
 
-                # Get symbols
-                symbols = r2.cmdj('izzj')
+                # Extracting strings
+                symbols = r2.cmdj('izj')
+                for symbol in symbols:
+                    normalizedSymbol = normalize(symbol["string"]) if symbol["string"] else normalize(symbol["name"])
+                    store_in_resDict(normalizedSymbol, filePath, resDict, repoPath)
+
+                # Extracting exported functions
+                functions = r2.cmdj('aflj')
+                for func in functions:
+                    if func["name"].startswith("sym."):
+                        normalizedFunc = normalize(func["name"])
+                        store_in_resDict(normalizedFunc, filePath, resDict, repoPath)
+
+                # Check if the data section exists
+                sections = r2.cmdj('iSj')
+                data_section = next((s for s in sections if s.get('name') == '.data'), None)
+                if data_section:
+                    offset = data_section['vaddr']
+                    size = data_section['vsize']
+                    hex_data = r2.cmd(f'p8 {size} @ {offset}')
+                    data_bytes = bytes.fromhex(hex_data)
+                else:
+                    print(f"No data section in file {filePath}")
+                    continue
+
+                data_fragments = extract_various_data(data_bytes)
+                for data_fragment in data_fragments:
+                    normalizedData = normalize(str(data_fragment))
+                    store_in_resDict(normalizedData, filePath, resDict, repoPath)
 
                 fileCnt += 1
-
-                for symbol in symbols:
-                    # Normalizing the symbol names
-                    normalizedSymbol = normalize(symbol["string"])
-
-                    storedPath = filePath.replace(repoPath, "")
-                    if normalizedSymbol not in resDict:
-                        resDict[normalizedSymbol] = []
-                    resDict[normalizedSymbol].append(storedPath)
 
             except Exception as e:
                 print("Subprocess failed", e)
@@ -90,6 +141,11 @@ def hashing(repoPath):
 
     return resDict, fileCnt
 
+def store_in_resDict(normalizedSymbol, filePath, resDict, repoPath):
+    storedPath = filePath.replace(repoPath, "")
+    if normalizedSymbol not in resDict:
+        resDict[normalizedSymbol] = []
+    resDict[normalizedSymbol].append(storedPath)
 
 def getAveFuncs():
     aveFuncs = {}
@@ -109,7 +165,8 @@ def readComponentDB():
 
             for eachHash in jsonLst:
                 hashval = eachHash["hash"]
-                componentDB[OSS].append(hashval)
+                normalized_hashval = normalize(hashval)
+                componentDB[OSS].append(normalized_hashval)
 
     return componentDB
 
@@ -153,17 +210,17 @@ def detector(inputDict, inputRepo):
         if totOSSFuncs == 0.0:
             continue
         comOSSFuncs = 0.0
-        for combined_hash in componentDB[OSS]:
-            hashval, kind = combined_hash.split('|**|')  # Split to get both values
-
-            if hashval in inputDict:
-                commonFunc.add(combined_hash)  # You might want to add combined_hash instead depending on your use case
+        for hashval in componentDB[OSS]:
+            hashval_pre = re.split(r'\|', hashval)
+            if hashval_pre[0] in inputDict:
+                commonFunc.add(hashval)
                 comOSSFuncs += 1.0
 
-        print(repoName, comOSSFuncs, commonFunc, totOSSFuncs, comOSSFuncs / totOSSFuncs)
-        print("\n")
+        #print(repoName, comOSSFuncs, commonFunc, totOSSFuncs, comOSSFuncs / totOSSFuncs)
+        #print("\n")
 
         if (comOSSFuncs / totOSSFuncs) >= theta:
+            """
             verPredictDict = {}
             allVerList, idx2Ver = readAllVers(repoName)
 
@@ -217,6 +274,7 @@ def detector(inputDict, inputRepo):
 
                 else:
                     for thash in inputDict:
+                        # score = tlsh.diff(tlsh.hash(ohash.encode()), tlsh.hash(thash.encode()))
                         score = Simhash(ohash).distance(Simhash(thash))
                         if int(score) <= 10:  # 10
                             modified += 1
@@ -237,11 +295,15 @@ def detector(inputDict, inputRepo):
 
             fres.write('\t'.join(
                 [inputRepo, repoName, predictedVer, str(used), str(unused), str(modified), str(strChange)]) + '\n')
+                """
+            fres.write('\t'.join
+                       ([repoName, str(comOSSFuncs), ', '.join(map(str, commonFunc)),
+                         str(totOSSFuncs), str(comOSSFuncs / totOSSFuncs)]) + '\n')
     fres.close()
 
 
 def main(inputPath, inputRepo):
-    resDict, fileCnt = hashing(inputPath)
+    resDict, fileCnt = extract_symbols_and_data(inputPath)
 
     detector(resDict, inputRepo)
 
@@ -252,7 +314,7 @@ if __name__ == "__main__":
     testmode = 1
 
     if testmode:
-        inputPath = currentPath + "/busybox"
+        inputPath = currentPath + "/crown/crown_release"
     else:
         inputPath = sys.argv[1]
 
