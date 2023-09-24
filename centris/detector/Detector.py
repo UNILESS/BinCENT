@@ -14,10 +14,13 @@ import shutil
 import json
 import traceback
 import r2pipe
+import struct
+import math
 
 """GLOBALS"""
 currentPath = os.getcwd()
 theta = 0.1
+ENTROPY_THRESHOLD = 0.5  # NOT USE YET
 resultPath = currentPath + "/res/"
 repoFuncPath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/osscollector/repo_functions/"
 verIDXpath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/preprocessor/verIDX/"
@@ -51,18 +54,40 @@ def normalize(string):
     return ''.join(string.replace('\n', '').replace('\r', '').replace('\t', '').replace('{', '').replace('}', '').split(
         ' ')).lower()
 
+def compute_entropy(bitstream):
+    # Split the bitstream into fragments of consecutive identical bits
+    fragments = []
+    current_fragment = bitstream[0]
+    for bit in bitstream[1:]:
+        if bit == current_fragment[-1]:
+            current_fragment += bit
+        else:
+            fragments.append(current_fragment)
+            current_fragment = bit
+    fragments.append(current_fragment)
+
+    # Compute the probability of each fragment
+    total_length = len(bitstream)
+    fragment_probabilities = [len(fragment) / total_length for fragment in fragments]
+
+    # Compute the entropy
+    entropy = -sum(p * math.log2(p) for p in fragment_probabilities)
+
+    return entropy
 
 
-import struct
 
 def extract_various_data(data_bytes):
     data_fragments = []
+    entropies = []
 
     def group_and_store(data_list):
         if not data_list:
             return
         grouped_data = ','.join(map(str, data_list))
-        data_fragments.append(grouped_data)
+        entropy = compute_entropy(''.join(map(str, data_list)))
+        entropies.append(entropy)
+        data_fragments.append((grouped_data, entropy))
 
     def extract_and_group(fmt, size, threshold=None):
         values = []
@@ -99,7 +124,8 @@ def extract_various_data(data_bytes):
     # Here, we use a threshold of 0.1 for demonstration purposes.
     extract_and_group('<d', 8, threshold=0.1)
 
-    return data_fragments
+    threshold = sorted(entropies)[len(entropies) // 2]  # auto threshold
+    return [data for data, entropy in data_fragments if entropy >= threshold]
 
 
 
@@ -293,8 +319,8 @@ def detector(inputDict, inputRepo):
                 [inputRepo, repoName, predictedVer, str(used), str(unused), str(modified), str(strChange)]) + '\n')
             """
             fres.write('\t'.join
-                       ([inputRepo, repoName, predictedVer, str(comOSSFuncs), str(totOSSFuncs), ', '.join(map(str, commonFunc)),
-                          str(comOSSFuncs / totOSSFuncs)]) + '\n')
+                       ([inputRepo, repoName, predictedVer, str(comOSSFuncs), str(totOSSFuncs), str(comOSSFuncs / totOSSFuncs),
+                         ', '.join(map(str, commonFunc))]) + '\n')
     fres.close()
 
 

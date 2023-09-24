@@ -13,7 +13,7 @@ import traceback
 """GLOBALS"""
 
 currentPath = os.path.dirname(os.path.realpath(__file__))
-gitCloneURLS = currentPath + "/sample_crown"  # Please change to the correct file (the "sample" file contains only 10 git-clone urls)
+gitCloneURLS = currentPath + "/sample_1-100"  # Please change to the correct file (the "sample" file contains only 10 git-clone urls)
 clonePath = currentPath + "/repo_src/"  # Default path
 tagDatePath = currentPath + "/repo_date/"  # Default path
 resultPath = currentPath + "/repo_functions/"  # Default path
@@ -25,7 +25,13 @@ for eachRepo in shouldMake:
     if not os.path.isdir(eachRepo):
         os.mkdir(eachRepo)
 
-
+def normalize(string):
+    # Code for normalizing the input string.
+    # LF and TAB literals, curly braces, and spaces are removed,
+    # and all characters are lowercased.
+    # ref: https://github.com/squizz617/vuddy
+    return ''.join(string.replace('\n', '').replace('\r', '').replace('\t', '').replace('{', '').replace('}', '').split(
+        ' ')).lower()
 
 def hashing(repoPath):
     possible = (".c", ".cc", ".cpp")
@@ -56,18 +62,21 @@ def hashing(repoPath):
                         # Extract string literals
                         string_literals = re.findall(r'"([^"]*)"', line)
                         for string_literal in string_literals:
+                            string_literal = normalize(string_literal)
                             resDict[f"String_{line_number + 1}"] = {'type': 'string', 'file': filePath,
                                                                     'value': string_literal}
 
                         # Extract array values
                         array_values = re.findall(r'=\s*{\s*([^}]*)\s*}', line)
                         for array_value in array_values:
+                            array_value = normalize(array_value)
                             resDict[f"Array_{line_number + 1}"] = {'type': 'array', 'file': filePath,
                                                                    'value': array_value}
 
                         # Extract enum values
                         enum_values = re.findall(r'enum\s+\w+\s*{\s*([^}]*)\s*}', line)
                         for enum_value in enum_values:
+                            enum_value = normalize(enum_value)
                             resDict[f"Enum_{line_number + 1}"] = {'type': 'enum', 'file': filePath,
                                                                   'value': enum_value}
 
@@ -86,7 +95,7 @@ def hashing(repoPath):
 
                         filepath = fields[1]
 
-                        tag = fields[0]  # The first field is usually the tag name
+                        tag = normalize(fields[0])  # The first field is usually the tag name
 
                         if None in [tag, filepath, line_number, kind]:
                             continue
@@ -95,7 +104,7 @@ def hashing(repoPath):
                             variable_line = lines[line_number - 1].strip()
                             variable_value = re.search(r'=\s*(.*);', variable_line)
                             if variable_value:
-                                value = variable_value.group(1)
+                                value = normalize(variable_value.group(1))
                             else:
                                 value = None
                             resDict[tag] = {'type': 'variable', 'file': filepath, 'value': value}
@@ -104,7 +113,7 @@ def hashing(repoPath):
                             enum_line = lines[line_number - 1].strip()
                             enum_value = re.search(r'=\s*(\w+)', enum_line)
                             if enum_value:
-                                value = enum_value.group(1)
+                                value = normalize(enum_value.group(1))
                             else:
                                 value = None
                             resDict[tag] = {'type': 'enum', 'file': filepath, 'value': value}

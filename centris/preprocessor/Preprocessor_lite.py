@@ -121,23 +121,49 @@ def redundancyElimination():
                         if eachLine == '' or eachLine == ' ':
                             continue
 
-                        hashval = eachLine.split('\t')[0]
+                        fields = eachLine.split('\t')
+                        if len(fields) < 3:  # Ensure there are enough fields
+                            continue
 
-                        # Remove the "String_XXX_" part from the hashval
-                        cleaned_hashval = hashval.replace("String_", "").replace("_", "")
+                        tag_type = fields[1]
+                        value = fields[2]
 
-                        if cleaned_hashval not in signature:
-                            signature[cleaned_hashval] = []
-                            tempDateDict[cleaned_hashval] = []
-                        signature[cleaned_hashval].append(str(idx - 1))
+                        if tag_type == "variable":
+                            # For the tag name
+                            hashval_tag = fields[0]
+                            if hashval_tag not in signature:
+                                signature[hashval_tag] = []
+                                tempDateDict[hashval_tag] = []
+                            signature[hashval_tag].append(str(idx - 1))
+
+                            # For the value
+                            hashval_value = value
+                            if hashval_value not in signature:
+                                signature[hashval_value] = []
+                                tempDateDict[hashval_value] = []
+                            signature[hashval_value].append(str(idx - 1))
+
+                        elif tag_type in ["array", "string", "enum"]:
+                            hashval = value
+                            if hashval not in signature:
+                                signature[hashval] = []
+                                tempDateDict[hashval] = []
+                            signature[hashval].append(str(idx - 1))
+
+                        else:
+                            hashval = fields[0]
+                            if hashval not in signature:
+                                signature[hashval] = []
+                                tempDateDict[hashval] = []
+                            signature[hashval].append(str(idx - 1))
 
 
                         if versionName in verDateDict:
-                            if cleaned_hashval in tempDateDict:  # 이 부분이 추가됨
-                                tempDateDict[cleaned_hashval].append(verDateDict[versionName])
+                            if hashval in tempDateDict:
+                                tempDateDict[hashval].append(verDateDict[versionName])
                         else:
-                            if cleaned_hashval in tempDateDict:  # 이 부분이 추가됨
-                                tempDateDict[cleaned_hashval].append("NODATE")
+                            if hashval in tempDateDict:
+                                tempDateDict[hashval].append("NODATE")
 
         except Exception as e:
             print("Parsing error: ", e)
@@ -149,15 +175,16 @@ def redundancyElimination():
 
         # For storing function birthdate
         for hashval in tempDateDict:
-            tempDateDict[hashval].sort()
-            funcDateDict[hashval] = tempDateDict[hashval][0]
+            if hashval in tempDateDict and tempDateDict[hashval]:
+                tempDateDict[hashval].sort()
+                funcDateDict[hashval] = tempDateDict[hashval][0]
 
-            # Update global_feature_dates
-            if hashval not in global_feature_dates:
-                global_feature_dates[hashval] = {'date': funcDateDict[hashval], 'repo': repoName}
-            else:
-                if funcDateDict[hashval] < global_feature_dates[hashval]['date']:
+                # Update global_feature_dates
+                if hashval not in global_feature_dates:
                     global_feature_dates[hashval] = {'date': funcDateDict[hashval], 'repo': repoName}
+                else:
+                    if funcDateDict[hashval] < global_feature_dates[hashval]['date']:
+                        global_feature_dates[hashval] = {'date': funcDateDict[hashval], 'repo': repoName}
 
         fdate = open(funcDatePath + repoName + "_funcdate", 'w')
         for hashval in funcDateDict:
