@@ -3,53 +3,114 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/Awesome-HarmonyOS@@HarmonyOS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/DarkFlippers@@unleashed-firmware" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/DaveGamble@@cJSON" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/EZLippi@@Tinyhttpd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/ExistentialAudio@@BlackHole" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/FFmpeg@@FFmpeg" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/Foundry376@@Mailspring" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/Genymobile@@scrcpy" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/HandBrake@@HandBrake" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/ImageMagick@@ImageMagick" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/LuaJIT@@LuaJIT" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/NVIDIA@@open-gpu-kernel-modules" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/OpenVPN@@openvpn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/SoftEtherVPN@@SoftEtherVPN" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/Tencent@@wcdb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/acidanthera@@OpenCorePkg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/alibaba@@tengine" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/allinurl@@goaccess" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/andlabs@@libui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/apple@@darwin-xnu" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/arendst@@Tasmota" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/audacity@@audacity" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/bilibili@@ijkplayer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/bkaradzic@@bgfx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/bkaradzic@@bimg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/bkaradzic@@bx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/blender@@blender" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/bulletphysics@@bullet3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/cesanta@@mongoose" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/cfenollosa@@os-tutorial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/citusdata@@citus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/cloudwu@@skynet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/cockpit-project@@cockpit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/codeplea@@tinyexpr" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/coolsnowwolf@@lede" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/coturn@@coturn" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/curl@@curl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/davatorium@@rofi" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/emscripten-core@@emscripten" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/espressif@@arduino-esp32" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/espressif@@esp-idf" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/facebook@@zstd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/fogleman@@Craft" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/freetype@@freetype" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/gentilkiwi@@mimikatz" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/ggerganov@@llama.cpp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/ggerganov@@whisper.cpp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/ggreer@@the_silver_searcher" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/haiwen@@seafile" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/hashcat@@hashcat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/huangz1990@@redis-3.0-annotated" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/id-Software@@DOOM" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/iovisor@@bcc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/irungentoo@@toxcore" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/ish-app@@ish" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/jart@@cosmopolitan" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/jarun@@nnn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/jedisct1@@libsodium" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/jqlang@@jq" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/julycoding@@The-Art-Of-Programming-By-July-2nd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/kcat@@openal-soft" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/kingToolbox@@WindTerm" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/koekeishiya@@yabai" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/krallin@@tini" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/leandromoreira@@ffmpeg-libav-tutorial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/libgit2@@libgit2" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/libuv@@libuv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/lua@@lua" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/lvgl@@lvgl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/madler@@zlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/memcached@@memcached" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/micropython@@micropython" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/mpv-player@@mpv" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/netdata@@netdata" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/nothings@@stb" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/obsproject@@obs-studio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/octalmage@@robotjs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/openresty@@lua-nginx-module" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/openresty@@openresty" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/openssl@@openssl" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/openwrt@@openwrt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/openzfs@@zfs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/peng-zhihui@@Dummy-Robot" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/pjreddie@@darknet" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/postgres@@postgres" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/qmk@@qmk_firmware" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/radareorg@@radare2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/raspberrypi@@linux" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/raysan5@@raylib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/reactos@@reactos" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/redis@@redis" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/robertdavidgraham@@masscan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/rofl0r@@proxychains-ng" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/s-matyukevich@@raspberry-pi-os" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/sandboxie-plus@@Sandboxie" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/skywind3000@@kcp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/sumatrapdfreader@@sumatrapdf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/swaywm@@sway" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/systemd@@systemd" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/timescale@@timescaledb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/torch@@torch7" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/torvalds@@linux" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/valinet@@ExplorerPatcher" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/ventoy@@Ventoy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/videolan@@vlc" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/vurtun@@nuklear" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/webview@@webview" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/wg@@wrk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/winsiderss@@systeminformer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/centris/osscollector/repo_src/woltapp@@blurhash" vcs="Git" />
   </component>
 </project>

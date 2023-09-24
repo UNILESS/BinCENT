@@ -13,7 +13,7 @@ import traceback
 """GLOBALS"""
 
 currentPath = os.path.dirname(os.path.realpath(__file__))
-gitCloneURLS = currentPath + "/sample_1-100"  # Please change to the correct file (the "sample" file contains only 10 git-clone urls)
+gitCloneURLS = currentPath + "/sample_crown"  # Please change to the correct file (the "sample" file contains only 10 git-clone urls)
 clonePath = currentPath + "/repo_src/"  # Default path
 tagDatePath = currentPath + "/repo_date/"  # Default path
 resultPath = currentPath + "/repo_functions/"  # Default path
@@ -58,6 +58,18 @@ def hashing(repoPath):
                         for string_literal in string_literals:
                             resDict[f"String_{line_number + 1}"] = {'type': 'string', 'file': filePath,
                                                                     'value': string_literal}
+
+                        # Extract array values
+                        array_values = re.findall(r'=\s*{\s*([^}]*)\s*}', line)
+                        for array_value in array_values:
+                            resDict[f"Array_{line_number + 1}"] = {'type': 'array', 'file': filePath,
+                                                                   'value': array_value}
+
+                        # Extract enum values
+                        enum_values = re.findall(r'enum\s+\w+\s*{\s*([^}]*)\s*}', line)
+                        for enum_value in enum_values:
+                            resDict[f"Enum_{line_number + 1}"] = {'type': 'enum', 'file': filePath,
+                                                                  'value': enum_value}
 
                     for line in ctags_output.split('\n'):
                         fields = line.split('\t')

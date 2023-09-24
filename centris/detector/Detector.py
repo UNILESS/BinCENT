@@ -17,9 +17,9 @@ import r2pipe
 
 """GLOBALS"""
 currentPath = os.getcwd()
-theta = 0
+theta = 0.1
 resultPath = currentPath + "/res/"
-repoFuncPath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/osscollector/repo_functions"
+repoFuncPath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/osscollector/repo_functions/"
 verIDXpath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/preprocessor/verIDX/"
 initialDBPath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/preprocessor/initialSigs/"
 finalDBPath = "/home/jeongwoo/PycharmProjects/BinCENT_2nd/centris/preprocessor/componentDB/"
@@ -58,37 +58,50 @@ import struct
 def extract_various_data(data_bytes):
     data_fragments = []
 
-    # Extract 2-byte integers
-    for i in range(0, len(data_bytes) - 1, 2):  # Ensure we have 2 bytes left
-        int_val = struct.unpack('<H', data_bytes[i:i+2])[0]
-        if int_val != 0:
-            data_fragments.append(f"{int_val}")
+    def group_and_store(data_list):
+        if not data_list:
+            return
+        grouped_data = ','.join(map(str, data_list))
+        data_fragments.append(grouped_data)
 
-    # Extract 4-byte integers
-    for i in range(0, len(data_bytes) - 3, 4):  # Ensure we have 4 bytes left
-        int_val = struct.unpack('<I', data_bytes[i:i+4])[0]
-        if int_val != 0:
-            data_fragments.append(f"{int_val}")
+    def extract_and_group(fmt, size, threshold=None):
+        values = []
+        prev_val = None
+        for i in range(0, len(data_bytes) - size + 1, size):  # Ensure we have enough bytes left
+            val = struct.unpack(fmt, data_bytes[i:i+size])[0]
+            if val != 0:
+                if prev_val is None:
+                    values.append(val)
+                elif threshold is None and val == prev_val + 1:
+                    values.append(val)
+                elif threshold is not None and abs(val - prev_val) <= threshold:
+                    values.append(val)
+                else:
+                    group_and_store(values)
+                    values = [val]
+                prev_val = val
+        group_and_store(values)
 
-    # Extract 8-byte integers
-    for i in range(0, len(data_bytes) - 7, 8):  # Ensure we have 8 bytes left
-        int_val = struct.unpack('<Q', data_bytes[i:i+8])[0]
-        if int_val != 0:
-            data_fragments.append(f"{int_val}")
+    # Extract and group 2-byte integers
+    extract_and_group('<H', 2)
 
-    # Extract 4-byte floats
-    for i in range(0, len(data_bytes) - 3, 4):  # Ensure we have 4 bytes left
-        float_val = struct.unpack('<f', data_bytes[i:i+4])[0]
-        if float_val != 0.0:
-            data_fragments.append(f"{float_val}")
+    # Extract and group 4-byte integers
+    extract_and_group('<I', 4)
 
-    # Extract 8-byte floats (double)
-    for i in range(0, len(data_bytes) - 7, 8):  # Ensure we have 8 bytes left
-        double_val = struct.unpack('<d', data_bytes[i:i+8])[0]
-        if double_val != 0.0:
-            data_fragments.append(f"{double_val}")
+    # Extract and group 8-byte integers
+    extract_and_group('<Q', 8)
+
+    # Extract and group 4-byte floats with a threshold
+    # Here, we use a threshold of 0.1 for demonstration purposes.
+    extract_and_group('<f', 4, threshold=0.1)
+
+    # Extract and group 8-byte floats (double) with a threshold
+    # Here, we use a threshold of 0.1 for demonstration purposes.
+    extract_and_group('<d', 8, threshold=0.1)
 
     return data_fragments
+
+
 
 def extract_symbols_and_data(repoPath):
     resDict = {}
@@ -131,7 +144,6 @@ def extract_symbols_and_data(repoPath):
                 for data_fragment in data_fragments:
                     normalizedData = normalize(str(data_fragment))
                     store_in_resDict(normalizedData, filePath, resDict, repoPath)
-
                 fileCnt += 1
 
             except Exception as e:
@@ -220,7 +232,7 @@ def detector(inputDict, inputRepo):
         #print("\n")
 
         if (comOSSFuncs / totOSSFuncs) >= theta:
-            """
+
             verPredictDict = {}
             allVerList, idx2Ver = readAllVers(repoName)
 
@@ -273,32 +285,16 @@ def detector(inputDict, inputRepo):
                     flag = 1
 
                 else:
-                    for thash in inputDict:
-                        # score = tlsh.diff(tlsh.hash(ohash.encode()), tlsh.hash(thash.encode()))
-                        score = Simhash(ohash).distance(Simhash(thash))
-                        if int(score) <= 10:  # 10
-                            modified += 1
-
-                            nflag = 0
-                            for opath in predictOSSDict[ohash]:
-                                for tpath in inputDict[thash]:
-                                    if opath in tpath:
-                                        nflag = 1
-                            if nflag == 0:
-                                strChange = True
-
-                            flag = 1
-
-                            break  # TODO: Suppose just only one function meet.
+                    break  # TODO: Suppose just only one function meet.
                 if flag == 0:
                     unused += 1
-
+            """
             fres.write('\t'.join(
                 [inputRepo, repoName, predictedVer, str(used), str(unused), str(modified), str(strChange)]) + '\n')
-                """
+            """
             fres.write('\t'.join
-                       ([repoName, str(comOSSFuncs), ', '.join(map(str, commonFunc)),
-                         str(totOSSFuncs), str(comOSSFuncs / totOSSFuncs)]) + '\n')
+                       ([inputRepo, repoName, predictedVer, str(comOSSFuncs), str(totOSSFuncs), ', '.join(map(str, commonFunc)),
+                          str(comOSSFuncs / totOSSFuncs)]) + '\n')
     fres.close()
 
 
